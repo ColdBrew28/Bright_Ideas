@@ -1,0 +1,137 @@
+﻿html, body{
+    height: 100%;
+    width: 100%;
+	font-family: "Poppins", sans-serif;
+}
+
+.navbar{
+    background-color: #cc9900;
+    padding: .5% 0;
+    font-size: 1.2em;
+}
+
+.navbar-brand{
+    min-height: 55px;
+    padding: 0 15px 5px;
+}
+
+.navbar-default .navbar-nav li a {
+    color: #d5d5d5;
+}
+
+.navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a.active {
+    color: #fff;
+}
+
+#home{
+    background: url(bg2.jpg) no-repeat center center fixed;
+    display: table;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+}
+
+.landing-text {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    background-color: RGBA(0,0,0,0.5);
+    font-family: "Poppins", sans-serif;
+}
+
+.landing-text h1 {
+    font-size: 500%;
+    font-weight: 700;
+    color: lightyellow;
+}
+
+.landing-text h3 {
+    color:#fff;
+}
+
+.padding {
+    padding: 150px 0;
+}
+
+.padding img {
+    width: 100%;
+}
+
+#fixed {
+    background: url(bg3.png) no-repeat center center fixed;
+    display: table;
+    height: 70%;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+}
+
+footer {
+    width: 100%;
+    background-color: #cc9900;
+    padding: 5% 5% 10% 5%;
+    color: antiquewhite;
+}
+
+.fa {
+    padding: 15px;
+    font-size: 25px;
+    color: #fff;
+}
+
+.fa:hover {
+    color: #ffef96;
+    text-decoration: none;
+}
+
+#more {
+    display: none;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 6px;
+    background-color: #ffcc5c;
+    border: none;
+    color: #000000;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button:hover{
+    background-color: #FFBF00;
+}
+  
+
+.overlay {
+
+    position: absolute;
+  
+    min-height: 100%;
+  
+    min-width: 100%;
+  
+    left: 0;
+  
+    top: 0;
+  
+    background: rgba(0, 0, 0, 0.5);
+  
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+     .landing-text h1 {
+        font-size: 300%;
+    }
+}
