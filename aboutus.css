@@ -8,9 +8,49 @@
 }
 
 body {
-    background-image: url('bgabout (1).png')
+    background-image: url('images/aboutbg.png');
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
+section {
+    position: relative;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+section:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #FCE38A, #95E1D3);
+    border-radius: 0 0 50% 50%/0 0 100% 100%;
+    transform: scaleX(1.5);
+}
+
+section .content {
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+section .content h2 {
+    margin: 0;
+    padding: 0;
+    color: #B67F5F;
+    font-size: 3em;
+        
+}
 
 .section {
     width: 100%;
@@ -32,14 +72,14 @@ body {
 .container .title h1 {
     text-transform: uppercase;
     font-size: 45px;
-    color: #FFC000;
+    color: #EAFFD0;
 }
 
 .container .title h1::after {
     content: "";
     height: 5px;
     width: 100px;
-    background-color: #FBEC5D;  
+    background-color: #95E1D3;  
     border-radius: 25px;
     display: block;
     margin: auto;
@@ -52,11 +92,11 @@ body {
 
 .image-section {
     float: right;
-    width: 40%;
+    width: 35%;
 }
 
 .image-section img {
-    width: 85%;
+    width: 120%;
     height: auto;
 }
 
@@ -69,7 +109,7 @@ body {
     margin-top: 20px;
     font-size: 17px;
     line-height: 1.5;
-    color: rgb(219, 219, 219);
+    color: #EAFFD0;
     text-align: justify;
     font-weight: 500;
 }
@@ -81,7 +121,7 @@ body {
 .content .article .button a {
     text-decoration: none;
     padding: 8px 25px;
-    background-color: #FFFAA0;
+    background-color: #95E1D3;
     border-radius: 40px;
     color: black;
     font-size: 18px;
@@ -90,8 +130,8 @@ body {
 
 .content .article .button a:hover {
     color: black;
-    background-color: #FADA5E;
-    transition: 1s ease;
+    background-color: #EAFFD0;
+    transition: 0.5s ease;
 }
 
 .container .social {
@@ -110,13 +150,13 @@ body {
     border-radius: 50%;
     line-height: 45px;
     text-align: center;
-    background-color: #FFFAA0;
+    background-color: #95E1D3;
     margin: 0px 5px;
 }
 .container .social i:hover {
     color: black;
-    background-color: #FADA5E;
-    transition: 1s ease;
+    background-color: #EAFFD0;
+    transition: 0.5s ease;
 }
 
 @media screen and (max-width: 768px) {
@@ -168,7 +208,7 @@ body {
 
 .wrapper{
     margin-top: 5%;
-    background-image: url('images/bg core.jpg');
+    background-image: url('images/corebg.png');
 }
   
 .wrapper h1{
