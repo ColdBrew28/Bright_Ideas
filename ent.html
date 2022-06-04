@@ -18,7 +18,7 @@
       padding-bottom: 10px;
       position: fixed;
       z-index: 999;
-      background-color: orange;
+      background: linear-gradient(to right,#F38181,#FCE38A,#95E1D3);
       border-radius: 10px
     }
     </style>
@@ -27,26 +27,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entertainment Books | Moon Pages</title>
+    <title>ARTS AND CRAFTS | THE ATTIC LIBRARY</title>
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
     <!-- boxicons -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
     <!-- app css -->
     <link rel="stylesheet" href="shop.css">
-    <link rel="shortcut icon" type="image/png" href="small.png">
+    <link rel="shortcut icon" type="image/png" href="images/logo - Copy.png">
 </head>
 
 <body>
+
+    <!-- TEST dont copy-->
+    <!--logic id="answer"></logic-->
+    <!-- TEST END-->
 
     <!-- header -->
     <header>
         <!-- mobile menu -->
         <div class="mobile-menu bg-second">
-            <a href="#" class="mb-logo">Moon Pages</a>
+            <a href="#" class="mb-logo">THE ATTIC LIBRARY</a>
             <span class="mb-menu-toggle" id="mb-menu-toggle">
                 <i class='bx bx-menu'></i>
             </span>
@@ -96,14 +102,14 @@
             <!-- mid header -->
             <div class="bg-main">
                 <div class="mid-header container1">
-                  <a class="navbar-brand" href="index.html"><img src="logo (2).png"></a>
+                  <a class="navbar-brand" href="index.html"><img src="images/logoattic.png"></a>
                     <div class="search">
                         <input type="text" placeholder="Search">
                         <i class='bx bx-search-alt'></i>
                     </div>
                     <ul class="user-menu">
                         <li><a href="#"><i class='bx bx-bell'></i></a></li>
-                        <li><a href="signlog.html"><i class='bx bx-user-circle'></i></a></li>
+                        <li><a href="index.php"><i class='bx bx-user-circle'></i></a></li>
 <!-- CART ICON -->      <li><a href="#"><i class='glyphicon glyphicon-shopping-cart my-cart-icon bx bx-cart'><span class="badge badge-notify my-cart-badge"></span></i></a></li>
                     </ul>
                 </div>
@@ -116,7 +122,7 @@
                         <li><a href="index.html">home</a></li>
                         <!-- mega menu -->
                         <li class="mega-dropdown">
-                            <a href="./ent.html">Shop<i class='bx bxs-chevron-down'></i></a>
+                            <a href="./shop.html">Shop<i class='bx bxs-chevron-down'></i></a>
                             <div class="mega-content">
                                 <div class="row">
                                     <div class="col-12">
@@ -124,16 +130,14 @@
                                             <h3>Categories</h3>
                                             <ul>
                                                 <li><a href="shop.html">All Products</a></li>
-                                                <li><a href="ent.html">Entertainment</a></li>
-                                                <li><a href="fichis.html">Fictional Historical</a></li>
-                                                <li><a href="fic.html">Fiction</a></li>
-                                                <li><a href="his.html">History</a></li>
-                                                <li><a href="hor.html">Horror</a></li>
-                                                <li><a href="educ.html">Educational</a></li>
+                                                <li><a href="ent.html">Arts and Crafts</a></li>
+                                                <li><a href="fichis.html">Books</a></li>
+                                                <li><a href="fic.html">Stationary</a></li>
+                                                <li><a href="his.html">Toys and Games</a></li>
+                                                <li><a href="hor.html">Workstation</a></li>
                                             </ul>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </li>
@@ -156,33 +160,323 @@
                 <div class="breadcumb">
                     <a href="index.html">home</a>
                     <span><i class='bx bxs-chevrons-right'></i></span>
-                    <a href="ent.html">Entertainment Books</a>
-					<h1 style="text-align: center;">Entertainment Books</h1>
+                    <a href="ent.html">Arts and Crafts</a> 
+                    <li class="mega-dropdown">
+                        <a href="./products.html">Arts and Crafts<i class='bx bxs-chevron-down'></i></a>
+                        <div class="mega-content">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="box">
+                                        <h3>Arts and Crafts</h3>
+                                        <ul>
+                                            <li><a href="#adhesive">ADHESIVE AND TOOLS</a></li>
+                                            <li><a href="#crafts">CRAFTS</a></li>
+                                            <li><a href="#diy">DIY TOOLS</a></li>
+                                            <li><a href="#sew">SEWING SUPPLIES</a></li>
+                                            <li><a href="#canvas">CANVAS AND PAPER</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                 </div>
             </div>
         </div>
+        
+        <h3 style="text-align: center;" id="adhesive">ADHESIVE AND TOOLS</h3>
+
         <div class="box">
+              <div class="row">
+
+			  <div class="col-3 col-md-6 col-sm-12">
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="images/3M small.png" alt="">
+                        <img src="images/3M small.png " alt="">
+                    </div>
+                    <div class="product-card-info">
+                        <div class="product-btn1">
+                            <a href="./product-detail - arts.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent1" data-name="3M Scotch Heavy Duty Mounting Square 1x1" data-summary="summary 1" data-price="164.00" data-quantity="1" data-image="images/3M small.png">
+                                <i class='bx bxs-cart-add'></i>
+                            </button>
+
+                        </div>
+                        <div class="product-card-name">
+                        <br>3M Scotch Heavy Duty Mounting Square 1x1
+                        </div>
+                        <div class="product-card-price">
+                            <span class="curr-price">₱ 164.00</span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+			 <div class="col-3 col-md-6 col-sm-12">
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="images/croc small.png " alt="">
+                        <img src="images/croc small.png" alt="">
+                    </div>
+                    <div class="product-card-info">
+                        <div class="product-btn1">
+                            <a href="./product-detail-bossypants - ent.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->         <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent2" data-name="Crocodile Masking Tape 25 Yards" data-summary="summary 1" data-price="26.75" data-quantity="1" data-image="images/croc small.png">
+                                <i class='bx bxs-cart-add'></i>
+                            </button>
+                        </div>
+                        <div class="product-card-name">
+                        <br>Crocodile Masking Tape 25 Yards
+                        </div>
+                        <div class="product-card-price">
+                            <span class="curr-price">₱ 26.75</span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+			<div class="col-3 col-md-6 col-sm-12">
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="images/elmer small.png " alt="">
+                        <img src="images/elmer small.png" alt="">
+                    </div>
+                    <div class="product-card-info">
+                        <div class="product-btn1">
+                            <a href="./product-detail-tfios - fic.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent3" data-name="Elmer's Glue Multi-Purpose Glue White" data-summary="summary 1" data-price=" 27.00" data-quantity="1" data-image="images/elmer small.png">
+                                <i class='bx bxs-cart-add'></i>
+                            </button>
+
+                        </div>
+                        <div class="product-card-name">
+                        <br>Elmer's Glue Multi-Purpose Glue White
+                        </div>
+                        <div class="product-card-price">
+                            <span class="curr-price">₱ 27.00</span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+			<div class="col-3 col-md-6 col-sm-12">
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="images/washable small.png " alt="">
+                        <img src="images/washable small.png" alt="">
+                    </div>
+                    <div class="product-card-info">
+                        <div class="product-btn1">
+                            <a href="./product-detail-hungergames -ent.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent4" data-name="Elmer's Washable Clear Glue" data-summary="summary 1" data-price="69.20" data-quantity="1" data-image="images/washable small.png ">
+                                <i class='bx bxs-cart-add'></i>
+                            </button>
+
+                        </div>
+                        <div class="product-card-name">
+                        <br>Elmer's Washable Clear Glue 
+                        </div>
+                        <div class="product-card-price">
+                            <span class="curr-price">₱ 69.20</span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+			<div class="col-3 col-md-6 col-sm-12">
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="images/stick small.png" alt="">
+                        <img src="images/stick small.png" alt="">
+                    </div>
+                    <div class="product-card-info">
+                        <div class="product-btn1">
+                            <a href="./product-detail-1984-ent.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent5" data-name="Glue Sticks for Glue Gun 4pcs" data-summary="summary 1" data-price="20.00" data-quantity="1" data-image="images/stick small.png">
+                                <i class='bx bxs-cart-add'></i>
+                            </button>
+
+                        </div>
+                        <div class="product-card-name">
+                        <br>Glue Sticks for Glue Gun 4pcs
+                        </div>
+                        <div class="product-card-price">
+                            <span class="curr-price">₱ 20.00</span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+			<div class="col-3 col-md-6 col-sm-12">
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="images/hbw small.png" alt="">
+                        <img src="images/hbw small.png" alt="">
+                    </div>
+                    <div class="product-card-info">
+                        <div class="product-btn1">
+                            <a href="./product-detail-bornstandingup - ent.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent6" data-name="HBW OFFICE, PUNCHER (MEDIUM)" data-summary="summary 1" data-price="130.00" data-quantity="1" data-image="images/hbw small.png">
+                                <i class='bx bxs-cart-add'></i>
+                            </button>
+
+                        </div>
+                        <div class="product-card-name">
+                        <br>HBW OFFICE, PUNCHER (MEDIUM)
+                        </div>
+                        <div class="product-card-price">
+                            <span class="curr-price">₱ 130.00</span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+			<div class="col-3 col-md-6 col-sm-12">
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="images/tape small.png" alt="">
+                        <img src="images/tape small.png" alt="">
+                    </div>
+                    <div class="product-card-info">
+                        <div class="product-btn1">
+                            <a href="./product-details - The Nightingle - fichis.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent7" data-name="Joy Packaging Tape Disenser With 2 Tan Packaging Tape" data-summary="summary 1" data-price="119.00" data-quantity="1" data-image="images/tape small.png">
+                                <i class='bx bxs-cart-add'></i>
+                            </button>
+
+                        </div>
+                        <div class="product-card-name">
+                        <br>Joy Packaging Tape Disenser With 2 Tan Packaging Tape
+                        </div>
+                        <div class="product-card-price">
+                            <span class="curr-price">₱ 119.00</span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+			<div class="col-3 col-md-6 col-sm-12">
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="images/low small.png" alt="">
+                        <img src="images/low small.png" alt="">
+                    </div>
+                    <div class="product-card-info">
+                        <div class="product-btn1">
+                            <a href="./product-details - The Book of Night Women - fichis.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent8" data-name="Low Price Stationery Tapes 8 pcs" data-summary="summary 1" data-price="100.00" data-quantity="1" data-image="images/low small.png">
+                                <i class='bx bxs-cart-add'></i>
+                            </button>
+
+                        </div>
+                        <div class="product-card-name">
+                        <br>Low Price Stationery Tapes 8 pcs
+                        </div>
+                        <div class="product-card-price">
+                            <span class="curr-price">₱ 100.00</span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="col-3 col-md-6 col-sm-12">
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="images/ruler small.png" alt="">
+                        <img src="images/ruler small.png" alt="">
+                    </div>
+                    <div class="product-card-info">
+                        <div class="product-btn1">
+                            <a href="./product-detail-maped-ent.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent9" data-name="Maped Ruler Set of 4" data-summary="summary 1" data-price="69.75" data-quantity="1" data-image="images/ruler small.png">
+                                <i class='bx bxs-cart-add'></i>
+                            </button>
+
+                        </div>
+                        <div class="product-card-name">
+                        <br>Maped Ruler Set of 4
+                        </div>
+                        <div class="product-card-price">
+                            <span class="curr-price">₱ 69.75</span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="col-3 col-md-6 col-sm-12">
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="images/sensoft small.png" alt="">
+                        <img src="images/sensoft small.png" alt="">
+                    </div>
+                    <div class="product-card-info">
+                        <div class="product-btn1">
+                            <a href="./product-details-sensoft-ent.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent10" data-name="Maped Sensoft Scissors With Flexible Handles 13cm-5" data-summary="summary 1" data-price="99.75" data-quantity="1" data-image="images/sensoft small.png">
+                                <i class='bx bxs-cart-add'></i>
+                            </button>
+
+                        </div>
+                        <div class="product-card-name">
+                        <br>Maped Sensoft Scissors With Flexible Handles 13cm-5
+                        </div>
+                        <div class="product-card-price">
+                            <span class="curr-price">₱ 99.75</span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+			</div>
+          </div>
+
+          <h3 style="text-align: center;" id="crafts">CRAFTS</h3>
+
+          <div class="box">
             <div class="row">
 
-            <div class="col-4 col-md-6 col-sm-12">
+            <div class="col-3 col-md-6 col-sm-12">
               <div class="product-card">
                   <div class="product-card-img">
-                      <img src="./images/thg.png " alt="">
-                      <img src="./images/thg.png " alt="">
+                      <img src="images/craft 1.1.png" alt="">
+                      <img src="images/craft 1.1.png " alt="">
                   </div>
                   <div class="product-card-info">
                       <div class="product-btn1">
-                          <a href="./product-detail-hungergames -ent.html" class="btn-flat btn-hover btn-shop-now">Details</a>
-<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ENT1" data-name="The Hunger Games" data-summary="summary 1" data-price="541.77" data-quantity="1" data-image="images/thg.png">
+                          <a href="./popsicle -arts.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent11" data-name="raft Popsicle Sticks (MULTI Color)" data-summary="summary 1" data-price="27.75" data-quantity="1" data-image="images/craft 1.1.png">
                               <i class='bx bxs-cart-add'></i>
                           </button>
 
                       </div>
                       <div class="product-card-name">
-                      <br>The Hunger Games
+                      <br>Craft Popsicle Sticks (MULTI Color) 
                       </div>
                       <div class="product-card-price">
-                          <span class="curr-price">₱ 541.77</span>
+                          <span class="curr-price">₱ 27.75 </span>
                       </div>
                   </div>
 
@@ -190,25 +484,24 @@
               </div>
           </div>
 
-           <div class="col-4 col-md-6 col-sm-12">
+           <div class="col-3 col-md-6 col-sm-12">
               <div class="product-card">
                   <div class="product-card-img">
-                      <img src="images/davinci.jpg " alt="">
-                      <img src="images/davinci.jpg" alt="">
+                      <img src="images/craft 2.png" alt="">
+                      <img src="images/craft 2.png" alt="">
                   </div>
                   <div class="product-card-info">
                       <div class="product-btn1">
-                          <a href="./product-detail - ent.html" class="btn-flat btn-hover btn-shop-now">Details</a>
-<!-- ADDTOCART -->         <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ENT2" data-name="The Da Vinci Code" data-summary="summary 1" data-price="450.00" data-quantity="1" data-image="images/davinci.jpg">
+                          <a href="./crayola air dry - arts.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->         <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent12" data-name="Crayola Air-Dry Clay Bucket" data-summary="summary 1" data-price=" 335.00" data-quantity="1" data-image="images/craft 2.png">
                               <i class='bx bxs-cart-add'></i>
                           </button>
-
                       </div>
                       <div class="product-card-name">
-                      <br>The Da Vinci Code
+                      <br>Crayola Air-Dry Clay Bucket
                       </div>
                       <div class="product-card-price">
-                          <span class="curr-price">₱ 450.00</span>
+                          <span class="curr-price">₱ 335.00 </span>
                       </div>
                   </div>
 
@@ -216,25 +509,25 @@
               </div>
           </div>
 
-          <div class="col-4 col-md-6 col-sm-12">
+          <div class="col-3 col-md-6 col-sm-12">
               <div class="product-card">
                   <div class="product-card-img">
-                      <img src="images/bp.png " alt="">
-                      <img src="images/bp.png" alt="">
+                      <img src="images/craft 3.1.png " alt="">
+                      <img src="images/craft 3.1.png" alt="">
                   </div>
                   <div class="product-card-info">
                       <div class="product-btn1">
-                          <a href="./product-detail-bossypants - ent.html" class="btn-flat btn-hover btn-shop-now">Details</a>
-<!-- ADDTOCART -->         <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ENT3" data-name="Bossypants" data-summary="summary 1" data-price="395.31" data-quantity="1" data-image="images/bp.png">
+                          <a href="./magical -arts.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent13" data-name="Elmer's Magical Liquil Slime Activator Washable" data-summary="summary 1" data-price="189.75" data-quantity="1" data-image="images/craft 3.1.png">
                               <i class='bx bxs-cart-add'></i>
                           </button>
 
                       </div>
                       <div class="product-card-name">
-                      <br>Bossypants
+                      <br>Elmer's Magical Liquil Slime Activator Washable
                       </div>
                       <div class="product-card-price">
-                          <span class="curr-price">₱ 395.31</span>
+                          <span class="curr-price">₱ 189.75</span>
                       </div>
                   </div>
 
@@ -242,25 +535,25 @@
               </div>
           </div>
 
-          <div class="col-4 col-md-6 col-sm-12">
+          <div class="col-3 col-md-6 col-sm-12">
               <div class="product-card">
                   <div class="product-card-img">
-                      <img src="images/1984.png " alt="">
-                      <img src="images/1984.png" alt="">
+                      <img src="images/craft 4.1.png " alt="">
+                      <img src="images/craft 4.1.png" alt="">
                   </div>
                   <div class="product-card-info">
                       <div class="product-btn1">
-                          <a href="./product-detail-1984-ent.html" class="btn-flat btn-hover btn-shop-now">Details</a>
-<!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ENT4" data-name="1984" data-summary="summary 1" data-price="455.62" data-quantity="1" data-image="images/1984.png">
+                          <a href="./slime kit -arts.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent14" data-name="Elmer's Slime Kit Jelly Rainbow " data-summary="summary 1" data-price="549.75" data-quantity="1" data-image="images/craft 4.1.png">
                               <i class='bx bxs-cart-add'></i>
                           </button>
 
                       </div>
                       <div class="product-card-name">
-                      <br>1984
+                      <br>Elmer's Slime Kit Jelly Rainbow 
                       </div>
                       <div class="product-card-price">
-                          <span class="curr-price">₱ 455.62</span>
+                          <span class="curr-price">₱ 549.75</span>
                       </div>
                   </div>
 
@@ -268,82 +561,1291 @@
               </div>
           </div>
 
-          <div class="col-4 col-md-6 col-sm-12">
+          <div class="col-3 col-md-6 col-sm-12">
               <div class="product-card">
                   <div class="product-card-img">
-                      <img src="images/bsu.png" alt="">
-                      <img src="images/bsu.png" alt="">
+                      <img src="images/craft 5.1.png" alt="">
+                      <img src="images/craft 5.1.png" alt="">
                   </div>
                   <div class="product-card-info">
                       <div class="product-btn1">
-                          <a href="./product-detail-bornstandingup - ent.html" class="btn-flat btn-hover btn-shop-now">Details</a>
-<!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ENT5" data-name="Born Standing Up: A Comic's Life" data-summary="summary 1" data-price="567.11" data-quantity="1" data-image="images/bsu.png">
+                          <a href="./juvale - arts.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent15" data-name="Juvale Pipe Cleaners Craft Fuzzy Sticks Assorted 1200 Pack" data-summary="summary 1" data-price="919.88" data-quantity="1" data-image="images/craft 5.1.png">
                               <i class='bx bxs-cart-add'></i>
                           </button>
 
                       </div>
                       <div class="product-card-name">
-                      <br>Born Standing Up: A Comic's Life
+                      <br>Juvale Pipe Cleaners Craft Fuzzy Sticks Assorted 1200 Pack
                       </div>
                       <div class="product-card-price">
-                          <span class="curr-price">₱ 567.11</span>
+                          <span class="curr-price">₱ 919.88</span>
                       </div>
                   </div>
 
 
               </div>
           </div>
-         </div>
 
+          <div class="col-3 col-md-6 col-sm-12">
+              <div class="product-card">
+                  <div class="product-card-img">
+                      <img src="images/craft 6.1.png" alt="">
+                      <img src="images/craft 6.1.png" alt="">
+                  </div>
+                  <div class="product-card-info">
+                      <div class="product-btn1">
+                          <a href="./mont marte - arts.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent16" data-name="Mont Marte Marker Set - Brilliant Glitter Markers 5pc" data-summary="summary 1" data-price="697.50" data-quantity="1" data-image="images/craft 6.1.png">
+                              <i class='bx bxs-cart-add'></i>
+                          </button>
+
+                      </div>
+                      <div class="product-card-name">
+                      <br>Mont Marte Marker Set - Brilliant Glitter Markers 5pc
+                      </div>
+                      <div class="product-card-price">
+                          <span class="curr-price">₱ 697.50</span>
+                      </div>
+                  </div>
+
+
+              </div>
+          </div>
+
+          <div class="col-3 col-md-6 col-sm-12">
+              <div class="product-card">
+                  <div class="product-card-img">
+                      <img src="images/craft 7.1.png" alt="">
+                      <img src="images/craft 7.1.png" alt="">
+                  </div>
+                  <div class="product-card-info">
+                      <div class="product-btn1">
+                          <a href="./nara - arts.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent17" data-name="Nara Air Dry Light Clay" data-summary="summary 1" data-price="84.00" data-quantity="1" data-image="images/craft 7.1.png">
+                              <i class='bx bxs-cart-add'></i>
+                          </button>
+
+                      </div>
+                      <div class="product-card-name">
+                      <br>Nara Air Dry Light Clay
+                      </div>
+                      <div class="product-card-price">
+                          <span class="curr-price">₱ 84.00</span>
+                      </div>
+                  </div>
+
+
+              </div>
+          </div>
+
+          <div class="col-3 col-md-6 col-sm-12">
+              <div class="product-card">
+                  <div class="product-card-img">
+                      <img src="images/craft 8.png" alt="">
+                      <img src="images/craft 8.png" alt="">
+                  </div>
+                  <div class="product-card-info">
+                      <div class="product-btn1">
+                          <a href="./origami -arts.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent18" data-name="Origami Paper Assorted Color 20 Sheets" data-summary="summary 1" data-price="14.75" data-quantity="1" data-image="images/craft 8.png">
+                              <i class='bx bxs-cart-add'></i>
+                          </button>
+
+                      </div>
+                      <div class="product-card-name">
+                      <br>Origami Paper Assorted Color 20 Sheets
+                      </div>
+                      <div class="product-card-price">
+                          <span class="curr-price">₱ 14.75</span>
+                      </div>
+                  </div>
+
+
+              </div>
+          </div>
+
+          <div class="col-3 col-md-6 col-sm-12">
+              <div class="product-card">
+                  <div class="product-card-img">
+                      <img src="images/craft 9.png" alt="">
+                      <img src="images/craft 9.png" alt="">
+                  </div>
+                  <div class="product-card-info">
+                      <div class="product-btn1">
+                          <a href="./pony bead - ent.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent19" data-name="Pony Bead - 9mm Transparent Multicolor 1000 pack" data-summary="summary 1" data-price="100.00" data-quantity="1" data-image="images/craft 9.png">
+                              <i class='bx bxs-cart-add'></i>
+                          </button>
+
+                      </div>
+                      <div class="product-card-name">
+                      <br>Pony Bead - 9mm Transparent Multicolor 1000 pack
+                      </div>
+                      <div class="product-card-price">
+                          <span class="curr-price">₱ 100.00</span>
+                      </div>
+                  </div>
+
+
+              </div>
+          </div>
+
+          <div class="col-3 col-md-6 col-sm-12">
+              <div class="product-card">
+                  <div class="product-card-img">
+                      <img src="images/craft 10.jpg" alt="">
+                      <img src="images/craft 10.jpg" alt="">
+                  </div>
+                  <div class="product-card-info">
+                      <div class="product-btn1">
+                          <a href="./wooden dowel - arts.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent20" data-name="Wooden Dowel Rods 50s Pack" data-summary="summary 1" data-price="300.00" data-quantity="1" data-image="images/craft 10.jpg">
+                              <i class='bx bxs-cart-add'></i>
+                          </button>
+
+                      </div>
+                      <div class="product-card-name">
+                      <br>Wooden Dowel Rods 50s Pack
+                      </div>
+                      <div class="product-card-price">
+                          <span class="curr-price">₱ 300.00</span>
+                      </div>
+                  </div>
+
+
+              </div>
+          </div>
+
+
+
+          </div>
+        </div> 
+
+        <h3 style="text-align: center;" id="sew">SEWING SUPPLIES</h3>
+
+          <div class="box">
+            <div class="row">
+
+            <div class="col-3 col-md-6 col-sm-12">
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="images/bent scissors.jpg" alt="">
+                        <img src="images/bent scissors.jpg" alt="">
+                    </div>
+                    <div class="product-card-info">
+                        <div class="product-btn1">
+                            <a href="./i am legend - arts.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent21" data-name="Bent Scissors" data-summary="summary 1" data-price="195.00" data-quantity="1" data-image="images/bent scissors.jpg">
+                                <i class='bx bxs-cart-add'></i>
+                            </button>
+
+                        </div>
+                        <div class="product-card-name">
+                        <br>Bent Scissors
+                        </div>
+                        <div class="product-card-price">
+                            <span class="curr-price">₱ 195.00</span>
+                        </div>
+                    </div>
+
+
+                </div>
+          </div>
+
+           <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/cutting mat.jpg" alt="">
+                    <img src="images/cutting mat.jpg" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./Wylding Hall - arts.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent22" data-name="Cutting Mat" data-summary="summary 1" data-price="150.00" data-quantity="1" data-image="images/cutting mat.jpg">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                    <div class="product-card-name">
+                    <br>Cutting Mat
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 150.00</span>
+                    </div>
+                </div>
+
+
+            </div>
+          </div>
+
+          <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/General-Use Scissors.jpg" alt="">
+                    <img src="images/General-Use Scissors.jpg" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./the hidden - arts.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent23" data-name="General-Use Scissors" data-summary="summary 1" data-price="150.00" data-quantity="1" data-image="images/General-Use Scissors.jpg">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                    <div class="product-card-name">
+                    <br>General-Use Scissors
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱150.00</span>
+                    </div>
+                </div>
+
+
+            </div>
+          </div>
+
+          <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/tailors scissors.jpg " alt="">
+                    <img src="images/tailors scissors.jpg" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./students - arts.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent24" data-name="Tailors Scissors" data-summary="summary 1" data-price="200.00" data-quantity="1" data-image="images/tailors scissors.jpg">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                    <div class="product-card-name">
+                    <br>Tailors Scissors
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 200.00</span>
+                    </div>
+                </div>
+
+
+            </div>
+          </div>
+
+          <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/seam ripper.jpg" alt="">
+                    <img src="images/seam ripper.jpg" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./knowledge - arts.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent25" data-name="Seam Ripper" data-summary="summary 1" data-price="15.00" data-quantity="1" data-image="images/seam ripper.jpg">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                    <div class="product-card-name">
+                    <br>Seam Ripper
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 15.00</span>
+                    </div>
+                </div>
+
+
+            </div>
+          </div>
+
+          <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/TRACING WHEEL.jpg" alt="">
+                    <img src="images/TRACING WHEEL.jpg" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./experiment - arts.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent26" data-name="Tracing Wheel" data-summary="summary 1" data-price="20.00" data-quantity="1" data-image="images/TRACING WHEEL.jpg">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                    <div class="product-card-name">
+                    <br>Tracing Wheel
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 20.00</span>
+                    </div>
+                </div>
+
+
+            </div>
+          </div>
+
+          <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/sewing thread.png" alt="">
+                    <img src="images/sewing thread.png" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./trivium - arts.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent27" data-name="Sewing Thread" data-summary="summary 1" data-price="25.00" data-quantity="1" data-image="images/sewing thread.png">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                    <div class="product-card-name">
+                    <br>Sewing Thread
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 25.00</span>
+                    </div>
+                </div>
+
+
+            </div>
+          </div>
+
+          <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/Pins.jpg" alt="">
+                    <img src="images/Pins.jpg" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./pins - arts.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent28" data-name="Pins" data-summary="summary 1" data-price="83.00" data-quantity="1" data-image="images/Pins.jpg">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                    <div class="product-card-name">
+                    <br>Pins
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 83.00</span>
+                    </div>
+                </div>
+
+
+            </div>
+          </div>
+
+          <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/measuring tape.jpg" alt="">
+                    <img src="images/measuring tape.jpg" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./measuring tape - arts.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent29" data-name="Measuring Tape" data-summary="summary 1" data-price="60.00" data-quantity="1" data-image="images/measuring tape.jpg">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                    <div class="product-card-name">
+                    <br>Measuring Tape
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 60.00</span>
+                    </div>
+                </div>
+
+
+
+          </div>
+          </div>
+
+          <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/sewing needles.jpg" alt="">
+                    <img src="images/sewing needles.jpg" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./Sewing Needle - arts.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent30" data-name="Sewing Needle" data-summary="summary 1" data-price="54.00" data-quantity="1" data-image="images/sewing needles.jpg">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                    <div class="product-card-name">
+                    <br>Sewing Needle
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 54.00</span>
+                    </div>
+                </div>
+                    </div>
+          </div>
+
+
+
+          </div>
         </div>
 
+        <h3 style="text-align: center;" id="diy">DIY TOOLS</h3>
+
+          <div class="box">
+            <div class="row">
+
+            <div class="col-3 col-md-6 col-sm-12">
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="images/wrenches.jpg" alt="">
+                        <img src="images/wrenches.jpg " alt="">
+                    </div>
+                    <div class="product-card-info">
+                        <div class="product-btn1">
+                            <a href="./product-details-Encounters at the Heart of the World - arts.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent31" data-name="Wrenches" data-summary="summary 1" data-price="1200.00" data-quantity="1" data-image="images/Wrenches.jpg">
+                                <i class='bx bxs-cart-add'></i>
+                            </button>
+
+                        </div>
+                        <div class="product-card-name">
+                        <br>Wrenches
+                        </div>
+                        <div class="product-card-price">
+                            <span class="curr-price">₱ 1,200.00</span>
+                        </div>
+                    </div>
+
+
+                </div>
+          </div>
+
+           <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/tape measure.jpg" alt="">
+                    <img src="images/tape measure.jpg" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./product-details-Guns,Germs,and Steel - arts.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent32" data-name="Tape Measure" data-summary="summary 1" data-price="271.00" data-quantity="1" data-image="images/tape measure.jpg">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                    <div class="product-card-name">
+                    <br>Tape Measure
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 271.00</span>
+                    </div>
+                </div>
+
+
+            </div>
+          </div>
+
+          <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/speed square.jpg " alt="">
+                    <img src="images/speed square.jpg" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./product-details-Embers of War - arts.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent33" data-name="Speed square" data-summary="summary 1" data-price="150.00" data-quantity="1" data-image="images/speed square.jpg">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                    <div class="product-card-name">
+                    <br>Speed square
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 150.00</span>
+                    </div>
+                </div>
+
+
+            </div>
+          </div>
+
+          <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/screw.jpg " alt="">
+                    <img src="images/screw.jpg" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./product-details-The History of the Ancient World - arts.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent34" data-name="Screw Driver" data-summary="summary 1" data-price="350.00" data-quantity="1" data-image="images/screw.jpg">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                    <div class="product-card-name">
+                    <br>Screw Driver
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 350.00</span>
+                    </div>
+                </div>
+
+
+            </div>
+          </div>
+
+          <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/pliers.jpg" alt="">
+                    <img src="images/pliers.jpg" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./product-details-Broken Lives - arts.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent35" data-name="Pliers" data-summary="summary 1" data-price="4150.00" data-quantity="1" data-image="images/pliers.jpg">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                    <div class="product-card-name">
+                    <br>Pliers
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 4,150.00</span>
+                    </div>
+                </div>
+
+
+            </div>
+          </div>
+
+          <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/hammer.jpg" alt="">
+                    <img src="images/hammer.jpg" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./hammer - arts.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent36" data-name="Hammer" data-summary="summary 1" data-price="400.00" data-quantity="1" data-image="images/hammer.jpg">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                    <div class="product-card-name">
+                    <br>Hammer
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 400.00</span>
+                    </div>
+                </div>
+
+
+            </div>
+          </div>
+
+          <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/jigsaw.jpg" alt="">
+                    <img src="images/jigsaw.jpg" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./the haunting - arts.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent37" data-name="Jigsaw" data-summary="summary 1" data-price="2500.00" data-quantity="1" data-image="images/jigsaw.jpg">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                    <div class="product-card-name">
+                    <br>Jigsaw
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 2,500.00</span>
+                    </div>
+                </div>
+
+
+            </div>
+          </div>
+
+          <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/palm sander.jpg" alt="">
+                    <img src="images/palm sander.jpg" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./dracula - arts.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->         <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent38" data-name="Palm Sander" data-summary="summary 1" data-price="4000.00" data-quantity="1" data-image="images/palm sander.jpg">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                    <div class="product-card-name">
+                    <br>Palm Sander
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 4,000.00</span>
+                    </div>
+                </div>
+
+
+            </div>
+          </div>
+
+          <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/carpenters pencil.jpg" alt="">
+                    <img src="images/carpenters pencil.jpg" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./carpenters pencil - arts.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->         <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent39" data-name="Carpenters Pencil" data-summary="summary 1" data-price="30.00" data-quantity="1" data-image="images/carpenters pencil.jpg">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                    <div class="product-card-name">
+                    <br>Carpenters Pencil
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 30.00</span>
+                    </div>
+                </div>
+
+           
+      </div>
+          </div>
+
+          <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/drill driver set.jpg" alt="">
+                    <img src="images/drill driver set.jpg" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./drill set - arts.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->         <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent40" data-name="Drill Driver Set" data-summary="summary 1" data-price="3450.00" data-quantity="1" data-image="images/drill driver set.jpg">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                   
+                </div>
+                <div class="product-card-name">
+                <br>Drill Driver Set
+                </div>
+                <div class="product-card-price">
+                    <span class="curr-price">₱ 3,450.00</span>
+                </div>
+            </div>
+          </div>
+
+
+
+          </div>
+        </div>
+
+          <h3 style="text-align: center;" id="canvas">CANVAS AND PAPER</h3>
+
+          <div class="box">
+            <div class="row" >
+
+
+            <div class="col-3 col-md-6 col-sm-12">
+              <div class="product-card">
+                  <div class="product-card-img">
+                      <img src="images/canvas1.jpg" alt="">
+                      <img src="images/canvas1.jpg " alt="">
+                  </div>
+                  <div class="product-card-info">
+                      <div class="product-btn1">
+                          <a href="./product-details - The Book of Negroes  - arts.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent41" data-name="Ampersand Claybord - 10 x 10, 3-4 Cradled" data-summary="summary 1" data-price="570.75" data-quantity="1" data-image="images/canvas1.jpg">
+                              <i class='bx bxs-cart-add'></i>
+                          </button>
+
+                      </div>
+                      <div class="product-card-name">
+                      <br>Ampersand Claybord - 10 x 10, 3-4 Cradled
+                      </div>
+                      <div class="product-card-price">
+                          <span class="curr-price">₱ 570.75</span>
+                      </div>
+                  </div>
+
+
+              </div>
+          </div>
+
+           <div class="col-3 col-md-6 col-sm-12">
+              <div class="product-card">
+                  <div class="product-card-img">
+                      <img src="images/canvas2.jpg" alt="">
+                      <img src="images/canvas2.jpg" alt="">
+                  </div>
+                  <div class="product-card-info">
+                      <div class="product-btn1">
+                          <a href="./blick academic - arts.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent42" data-name="Blick Academic Cotton Stretched Canvas Pack - 12 x 12, Pkg of 2" data-summary="summary 1" data-price="314.27" data-quantity="1" data-image="images/canvas2.jpg">
+                              <i class='bx bxs-cart-add'></i>
+                          </button>
+
+                      </div>
+                      <div class="product-card-name">
+                      <br>Blick Academic Cotton Stretched Canvas Pack - 12 x 12, Pkg of 2
+                      </div>
+                      <div class="product-card-price">
+                          <span class="curr-price">₱ 314.27</span>
+                      </div>
+                  </div>
+
+
+              </div>
+          </div>
+
+          <div class="col-3 col-md-6 col-sm-12">
+              <div class="product-card">
+                  <div class="product-card-img">
+                      <img src="images/canvas3.jpg " alt="">
+                      <img src="images/canvas3.jpg" alt="">
+                  </div>
+                  <div class="product-card-info">
+                      <div class="product-btn1">
+                          <a href="./product-details -Beloved - arts.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent43" data-name="Blick Premier Heavyweight Stretched Cotton Canvas - 11 x 14, 1-3-8 Profile" data-summary="summary 1" data-price="1096.53" data-quantity="1" data-image="images/canvas3.jpg">
+                              <i class='bx bxs-cart-add'></i>
+                          </button>
+
+                      </div>
+                      <div class="product-card-name">
+                      <br>Blick Premier Heavyweight Stretched Cotton Canvas - 11 x 14, 1-3-8 Profile
+                      </div>
+                      <div class="product-card-price">
+                          <span class="curr-price">₱ 1096.53</span>
+                      </div>
+                  </div>
+
+
+              </div>
+          </div>
+
+          <div class="col-3 col-md-6 col-sm-12">
+              <div class="product-card">
+                  <div class="product-card-img">
+                      <img src="images/canvas4.jpg" alt="">
+                      <img src="images/canvas4.jpg" alt="">
+                  </div>
+                  <div class="product-card-info">
+                      <div class="product-btn1">
+                          <a href="./stretched cotton - arts.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent44" data-name="Blick Premier Stretched Cotton Canvas - Gallery Profile, Splined, 6 x 6" data-summary="summary 1" data-price=" 346.80" data-quantity="1" data-image="images/canvas4.jpg">
+                              <i class='bx bxs-cart-add'></i>
+                          </button>
+
+                      </div>
+                      <div class="product-card-name">
+                      <br>Blick Premier Stretched Cotton Canvas - Gallery Profile, Splined, 6 x 6
+                      </div>
+                      <div class="product-card-price">
+                          <span class="curr-price">₱ 346.80</span>
+                      </div>
+                  </div>
+
+
+              </div>
+          </div>
+
+          <div class="col-3 col-md-6 col-sm-12">
+              <div class="product-card">
+                  <div class="product-card-img">
+                      <img src="images/canvas5.jpg" alt="">
+                      <img src="images/canvas5.jpg" alt="">
+                  </div>
+                  <div class="product-card-info">
+                      <div class="product-btn1">
+                          <a href="./product-details-The Vegetarian  - arts.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent45" data-name="Blick Studio Cotton Canvas - 8 x 10, Traditional Profile" data-summary="summary 1" data-price="325.81" data-quantity="1" data-image="images/canvas5.jpg">
+                              <i class='bx bxs-cart-add'></i>
+                          </button>
+
+                      </div>
+                      <div class="product-card-name">
+                      <br>Blick Studio Cotton Canvas - 8 x 10, Traditional Profile
+                      </div>
+                      <div class="product-card-price">
+                          <span class="curr-price">₱ 325.81</span>
+                      </div>
+                  </div>
+
+
+              </div>
+          </div>
+
+          <div class="col-3 col-md-6 col-sm-12">
+              <div class="product-card">
+                  <div class="product-card-img">
+                      <img src="images/canvas6.jpg" alt="">
+                      <img src="images/canvas6.jpg" alt="">
+                  </div>
+                  <div class="product-card-info">
+                      <div class="product-btn1">
+                          <a href="./product-details-Adventure of Sherlock Homes - arts.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent46" data-name="Blick Studio Stretched Cotton Canvas - Gallery Profile, 12 x 12" data-summary="summary 1" data-price="631.68" data-quantity="1" data-image="images/canvas6.jpg">
+                              <i class='bx bxs-cart-add'></i>
+                          </button>
+
+                      </div>
+                      <div class="product-card-name">
+                      <br>Blick Studio Stretched Cotton Canvas - Gallery Profile, 12 x 12
+                      </div>
+                      <div class="product-card-price">
+                          <span class="curr-price">₱ 631.68</span>
+                      </div>
+                  </div>
+
+
+              </div>
+          </div>
+
+          <div class="col-3 col-md-6 col-sm-12">
+              <div class="product-card">
+                  <div class="product-card-img">
+                      <img src="images/canvas7.jpg" alt="">
+                      <img src="images/canvas7.jpg" alt="">
+                  </div>
+                  <div class="product-card-info">
+                      <div class="product-btn1">
+                          <a href="./product-details-ANNA KARENINA - fic.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent47" data-name="Fredrix Profile Cotton Canvas - 22 x 28, Gallerywrap" data-summary="summary 1" data-price="875.90" data-quantity="1" data-image="images/canvas7.jpg">
+                              <i class='bx bxs-cart-add'></i>
+                          </button>
+
+                      </div>
+                      <div class="product-card-name">
+                      <br>Fredrix Profile Cotton Canvas - 22 x 28, Gallerywrap
+                      </div>
+                      <div class="product-card-price">
+                          <span class="curr-price">₱ 875.90</span>
+                      </div>
+                  </div>
+
+
+              </div>
+          </div>
+
+          <div class="col-3 col-md-6 col-sm-12">
+              <div class="product-card">
+                  <div class="product-card-img">
+                      <img src="images/canvas8.jpg" alt="">
+                      <img src="images/canvas8.jpg" alt="">
+                  </div>
+                  <div class="product-card-info">
+                      <div class="product-btn1">
+                          <a href="./vincent pro - arts.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent48" data-name="Masterpiece Vincent Pro Artfix Linen Canvas - 9 x 12, Acrylic Primed" data-summary="summary 1" data-price="760.89" data-quantity="1" data-image="images/canvas8.jpg">
+                              <i class='bx bxs-cart-add'></i>
+                          </button>
+
+                      </div>
+                      <div class="product-card-name">
+                      <br>Masterpiece Vincent Pro Artfix Linen Canvas - 9 x 12, Acrylic Primed
+                      </div>
+                      <div class="product-card-price">
+                          <span class="curr-price">₱ 760.89</span>
+                      </div>
+                  </div>
+
+
+              </div>
+          </div>
+          
+          <div class="col-3 col-md-6 col-sm-12">
+              <div class="product-card">
+                  <div class="product-card-img">
+                      <img src="images/canvas9.jpg" alt="">
+                      <img src="images/canvas9.jpg" alt="">
+                  </div>
+                  <div class="product-card-info">
+                      <div class="product-btn1">
+                          <a href="./artist grid - arts.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent49" data-name="The Artist Grid 3-4 Profile Cotton Canvas - 4 x 4" data-summary="summary 1" data-price="440.71" data-quantity="1" data-image="images/canvas9.jpg">
+                              <i class='bx bxs-cart-add'></i>
+                          </button>
+
+                      </div>
+                      <div class="product-card-name">
+                      <br>The Artist Grid 3-4 Profile Cotton Canvas - 4 x 4
+                      </div>
+                      <div class="product-card-price">
+                          <span class="curr-price">₱ 440.71</span>
+                      </div>
+                  </div>
+
+
+              </div>
+          </div>
+
+          <div class="col-3 col-md-6 col-sm-12">
+              <div class="product-card">
+                  <div class="product-card-img">
+                      <img src="images/canvas10.jpg" alt="">
+                      <img src="images/canvas10.jpg" alt="">
+                  </div>
+                  <div class="product-card-info">
+                      <div class="product-btn1">
+                          <a href="./product-details-The Girl with the Dragon Tatoo - arts.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent50" data-name="Masterpiece Elite Cotton Canvas - 22 x 30, Acrylic Primed" data-summary="summary 1" data-price="1899.95" data-quantity="1" data-image="images/canvas10.jpg">
+                              <i class='bx bxs-cart-add'></i>
+                          </button>
+
+                      </div>
+                      <div class="product-card-name">
+                      <br>Masterpiece Elite Cotton Canvas - 22 x 30, Acrylic Primed
+                      </div>
+                      <div class="product-card-price">
+                          <span class="curr-price">₱ 1899.95</span>
+                      </div>
+                  </div>
+
+
+              </div>
+          </div>
+
+          <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/paper1.jpg" alt="">
+                    <img src="images/paper1.jpg" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./arches -arts.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent51" data-name="Arches Text Wove Paper" data-summary="summary 1" data-price="5.38" data-quantity="1" data-image="images/paper1.jpg">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                    <div class="product-card-name">
+                    <br>Arches Text Wove Paper
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 5.38/pc</span>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/paper2.jpg" alt="">
+                    <img src="images/paper2.jpg" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./bee paper - arts.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent52" data-name="Bee Paper Super Deluxe Sketch Paper - 9 x 12, Pkg of 100 Sheets" data-summary="summary 1" data-price="752.54" data-quantity="1" data-image="images/paper2.jpg">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                    <div class="product-card-name">
+                    <br>Bee Paper Super Deluxe Sketch Paper - 9" x 12", Pkg of 100 Sheets
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 752.54</span>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/paper3.jpg" alt="">
+                    <img src="images/paper3.jpg" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./blick studio drawing pad - arts.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent53" data-name="Blick Studio Drawing Pad - 18 x 24, 70 Sheets" data-summary="summary 1" data-price="674.45" data-quantity="1" data-image="images/paper3.jpg">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                    <div class="product-card-name">
+                    <br>Blick Studio Drawing Pad - 18" x 24", 70 Sheets
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 674.45</span>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/paper4.jpg" alt="">
+                    <img src="images/paper4.jpg" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./blick studio sketch pad - arts.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent54" data-name="Blick Studio Sketch Pad - 14 x 17, 100 Sheets" data-summary="summary 1" data-price="634.52" data-quantity="1" data-image="images/paper4.jpg">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                    <div class="product-card-name">
+                    <br>Blick Studio Sketch Pad - 14" x 17", 100 Sheets
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 634.52</span>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/paper5.jpg" alt="">
+                    <img src="images/paper5.jpg" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./canson universal - arts.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent55" data-name="Canson Universal Sketch Pad - 12 x 9, Portrait, 100 Sheets" data-summary="summary 1" data-price="472.19" data-quantity="1" data-image="images/paper5.jpg">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                    <div class="product-card-name">
+                    <br>Canson Universal Sketch Pad - 12" x 9", Portrait, 100 Sheets
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 472.19</span>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/paper6.jpg" alt="">
+                    <img src="images/paper6.jpg" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./cansol XL - arts.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent56" data-name="Canson XL Mixed Media Sheet - 18 x 24, Single Sheet" data-summary="summary 1" data-price="35.00" data-quantity="1" data-image="images/paper6.jpg">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                    <div class="product-card-name">
+                    <br>Canson XL Mixed Media Sheet - 18" x 24", Single Sheet
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 35.00</span>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/paper7.jpg" alt="">
+                    <img src="images/paper7.jpg" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./stillman - arts.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent57" data-name="Stillman & Birn Archival Zeta Series Mixed Media Paper" data-summary="summary 1" data-price=" 149.76" data-quantity="1" data-image="images/paper7.jpg">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                    <div class="product-card-name">
+                    <br>Stillman & Birn Archival Zeta Series Mixed Media Paper
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 149.76</span>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/paper8.jpg" alt="">
+                    <img src="images/paper8.jpg" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./strathmore - arts.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->         <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent58" data-name="Strathmore 300 Series Sketch Pad - 14 x 17, Wire Bound, 100 Sheets" data-summary="summary 1" data-price="295.90" data-quantity="1" data-image="images/paper8.jpg">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                    <div class="product-card-name">
+                    <br>Strathmore 300 Series Sketch Pad - 14" x 17", Wire Bound, 100 Sheets
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 295.90</span>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/paper9.jpg" alt="">
+                    <img src="images/paper9.jpg" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./strathmore 400 - arts.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->         <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent59" data-name="Strathmore 400 Series Sketch Pad - 14 x 17, Spiral Bound, Side, 100 Sheets" data-summary="summary 1" data-price="854.24" data-quantity="1" data-image="images/paper9.jpg">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                    <div class="product-card-name">
+                    <br>Strathmore 400 Series Sketch Pad - 14" x 17", Spiral Bound, Side, 100 Sheets
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 854.24</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/paper10.jpg" alt="">
+                    <img src="images/paper10.jpg" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./uart - arts.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->         <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent60" data-name="UArt Sanded Pastel Paper - 56” x 9m, 800 Grit, Roll" data-summary="summary 1" data-price="169.06" data-quantity="1" data-image="images/paper10.jpg">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                    <div class="product-card-name">
+                    <br>UArt Sanded Pastel Paper - 56” x 9m, 800 Grit, Roll
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 169.06</span>
+                    </div>
+                </div>
+
+          </div>
+      </div>
+
+            </div>
+        </div>
+
+
+
+          
       </div>
     <!-- end products content -->
 
     <!-- footer -->
-    <footer class="bg-second">
-      <div class="container">
-          <div class="row">
-              <div class="col-4">
-                  <h3 class="footer-head">Additional Information</h3>
+    <div class="footer">
 
-                  <p style="text-align: justify;">The Moon Pages is one of the top publishing company in the Philippines.  It produces high quality books that every book lover deserves.  </p>
-                      <br>
-                  <p style="text-align: justify;">In addition, the firm strives to offer a welcoming environment for its customers that encourages browsing, relaxation, and an enjoyable environment.</p>
-              </div>
-              <div class="col-4 ">
-                  <h3 class="footer-head" style="text-align: center;">Connect</h3>
-                  <ul class="menu" style="text-align: center;">
-                      <a href="#" class="fa fa-facebook"></a>
-                      <a href="#" class="fa fa-twitter"></a>
-                      <a href="#" class="fa fa-instagram"></a>
-                      <a href="#" class="fa fa-google"></a>
-                  </ul>
-              </div>
-              <div class="col-4 ">
-                  <h3 class="footer-head" style="text-align: center;">Address</h3>
-                  <ul class="menu">
-                      <p style="text-align: center;">Robinsons Pioneer Complex Pioneer St.</br>
-                          Mandaluyong City 1550 Philippines</p>
-                          <br>
-                          <h3 style="text-align: center;">CONTACT</h3><br>
-                       <p style="text-align: center;">TCPinquire@gmail.com
-
-                       <br/>0998-527-6381
-
-                       <br/>863-30114</p>
-                  </ul>
-              </div>
-
-          </div>
-      </div>
-      <div class="footer-copyright text-center" style="text-align: center;">© 2021 The City Pages
-          <br/>ALL RIGHTS RESERVED.</div>
-  </footer>
+        <div class="box-container">
+    
+            <div class="box">
+                <h3>additional info</h3>
+                <p>Searching for a diverse selection of arts and crafts? The Attic Library encourages you to learn while
+                    boosting your artistic and creative abilities. Find the latest up-to-date art supplies and DIY crafts.</p>
+            </div>
+    
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#">home</a>
+                <a href="#">about</a>
+                <a href="#">review</a>
+                <a href="#">contact</a>
+            </div>
+    
+            <div class="box">
+                <h3>follow us</h3>
+                    <a href="#">facebook</a>
+                    <a href="#">instagram</a>
+                    <a href="#">pinterest</a>
+                    <a href="#">twitter</a>
+            </div>
+    
+            <div class="box">
+                <h3>contact info</h3>
+                <div class="info">
+                    <i class="fas fa-phone"></i>
+                    <p> 0998-527-6381 <br> 863-30114 </p>
+                </div>
+                <div class="info">
+                    <i class="fas fa-envelope"></i>
+                    <p> TCPinquire@gmail.com <br> brightinc@gmail.com </p>
+                </div>
+                <div class="info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p> Robinsons Pioneer
+                        <br> Mandaluyong City, Philippines </p>
+                </div>
+            </div>
+    
+        </div>
+    
+        <h1 class="credit"> &copy; copyright @ 2020 by Bright Ideas Inc. </h1>
+    
+    </div>
     <!-- end footer -->
 
     <!-- app js -->
-    <script src="app.js"></script>
+    <script src="./js/app.js"></script>
 
     <!-- ADDTOCART JS -->
     <script src="js/jquery-2.2.3.min.js"></script>
@@ -404,5 +1906,4 @@
     <!-- ADDTOCART JS END -->
 
 </body>
-
 </html>

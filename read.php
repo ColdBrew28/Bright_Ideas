@@ -19,9 +19,12 @@
 			<table class="table table-striped">
 			  <thead>
 			    <tr>
-			      <th scope="col">#</th>
-			      <th scope="col">Name</th>
-			      <th scope="col">Email</th>
+				<th scope="col">#</th>
+			      <th scope="col">First Name</th>
+			      <th scope="col">Last Name</th>
+				  <th scope="col">Username</th>
+				  <th scope="col">Email</th>
+				  <th scope="col">Password</th>
 			      <th scope="col">Action</th>
 			    </tr>
 			  </thead>
@@ -32,11 +35,14 @@
 			  	   $i++;
 			  	 ?>
 			    <tr>
-			      <th scope="row"><?=$i?></th>
-			      <td><?=$rows['name']?></td>
-			      <td><?php echo $rows['email']; ?></td>
+				<th scope="row"><?=$i?></th>
+			      <td><?=$rows['firstname']?></td>
+			      <td><?php echo $rows['lastname']; ?></td>
+				  <td><?php echo $rows['username']; ?></td>
+				  <td><?php echo $rows['email']; ?></td>
+				  <td><?php echo $rows['password']; ?></td>
 			      <td><a href="update.php?id=<?=$rows['id']?>" 
-			      	     class="btn btn-info">Update</a>
+			      	     class="btn btn-success">Update</a>
 
 			      	  <a href="php/delete.php?id=<?=$rows['id']?>" 
 			      	     class="btn btn-info">Delete</a>
@@ -49,7 +55,7 @@
 			<div class="link-right">
 				<a href="index.php" class="btn btn-info">Create</a>
 				<br>
-				<a href="index.html" class="btn btn-success">Go to Moon Pages Bookstore</a>
+				<a href="index.html" class="btn btn-success">Go to THE ATTIC LIBRARY Bookstore</a>
 			</div>
 		</div>
 	</div>

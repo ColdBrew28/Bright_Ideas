@@ -18,7 +18,7 @@
       padding-bottom: 10px;
       position: fixed;
       z-index: 999;
-      background-color: orange;
+      background: linear-gradient(to right,#F38181,#FCE38A,#95E1D3);
       border-radius: 10px
     }
     </style>
@@ -27,26 +27,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fiction Books | Moon Pages</title>
+    <title>STATIONARY | THE ATTIC LIBRARY</title>
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
     <!-- boxicons -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
     <!-- app css -->
     <link rel="stylesheet" href="shop.css">
-    <link rel="shortcut icon" type="image/png" href="small.png">
+    <link rel="shortcut icon" type="image/png" href="images/logo - Copy.png">
 </head>
 
 <body>
+
+    <!-- TEST dont copy-->
+    <!--logic id="answer"></logic-->
+    <!-- TEST END-->
 
     <!-- header -->
     <header>
         <!-- mobile menu -->
         <div class="mobile-menu bg-second">
-            <a href="#" class="mb-logo">Moon Pages</a>
+            <a href="#" class="mb-logo">THE ATTIC LIBRARY</a>
             <span class="mb-menu-toggle" id="mb-menu-toggle">
                 <i class='bx bx-menu'></i>
             </span>
@@ -96,14 +102,14 @@
             <!-- mid header -->
             <div class="bg-main">
                 <div class="mid-header container1">
-                  <a class="navbar-brand" href="index.html"><img src="logo (2).png"></a>
+                  <a class="navbar-brand" href="index.html"><img src="images/logoattic.png"></a>
                     <div class="search">
                         <input type="text" placeholder="Search">
                         <i class='bx bx-search-alt'></i>
                     </div>
                     <ul class="user-menu">
                         <li><a href="#"><i class='bx bx-bell'></i></a></li>
-                        <li><a href="signlog.html"><i class='bx bx-user-circle'></i></a></li>
+                        <li><a href="index.php"><i class='bx bx-user-circle'></i></a></li>
 <!-- CART ICON -->      <li><a href="#"><i class='glyphicon glyphicon-shopping-cart my-cart-icon bx bx-cart'><span class="badge badge-notify my-cart-badge"></span></i></a></li>
                     </ul>
                 </div>
@@ -116,7 +122,7 @@
                         <li><a href="index.html">home</a></li>
                         <!-- mega menu -->
                         <li class="mega-dropdown">
-                            <a href="./fic.html">Shop<i class='bx bxs-chevron-down'></i></a>
+                            <a href="./shop.html">Shop<i class='bx bxs-chevron-down'></i></a>
                             <div class="mega-content">
                                 <div class="row">
                                     <div class="col-12">
@@ -124,16 +130,14 @@
                                             <h3>Categories</h3>
                                             <ul>
                                                 <li><a href="shop.html">All Products</a></li>
-                                                <li><a href="ent.html">Entertainment</a></li>
-                                                <li><a href="fichis.html">Fictional Historical</a></li>
-                                                <li><a href="fic.html">Fiction</a></li>
-                                                <li><a href="his.html">History</a></li>
-                                                <li><a href="hor.html">Horror</a></li>
-                                                <li><a href="educ.html">Educational</a></li>
+                                                <li><a href="ent.html">Arts and Crafts</a></li>
+                                                <li><a href="fichis.html">Books</a></li>
+                                                <li><a href="fic.html">Stationary</a></li>
+                                                <li><a href="his.html">Toys and Games</a></li>
+                                                <li><a href="hor.html">Workstation</a></li>
                                             </ul>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </li>
@@ -156,33 +160,54 @@
                 <div class="breadcumb">
                     <a href="index.html">home</a>
                     <span><i class='bx bxs-chevrons-right'></i></span>
-                    <a href="fic.html">Fiction Books</a>
-					<h1 style="text-align: center;">Fiction Books</h1>
+                    <a href="fic.html">STATIONARY</a> 
+                    <li class="mega-dropdown">
+                        <a href="./fic.html">STATIONARY<i class='bx bxs-chevron-down'></i></a>
+                        <div class="mega-content">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="box">
+                                        <h3>STATIONARY CATEGORIES</h3>
+                                        <ul>
+                                            <li><a href="#soe">SCHOOL AND OFFICE ESSENTIALS</a></li>
+                                            <li><a href="#fs">FILING SUPPLIES</a></li>
+                                            <li><a href="#ws">WRITING SUPPLIES</a></li>
+                                            <li><a href="#ps">PAPER SUPPLIES<a></li>
+                                            <li><a href="#cs">COLORING SUPPLIES</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                 </div>
             </div>
         </div>
+        
+        <h1 style="text-align: center;" id="soe">SCHOOL AND OFFICE ESSENTIALS</h1>
+
         <div class="box">
             <div class="row">
 
-            <div class="col-4 col-md-6 col-sm-12">
+            <div class="col-3 col-md-6 col-sm-12">
               <div class="product-card">
                   <div class="product-card-img">
-                      <img src="./images/hobbit.png " alt="">
-                      <img src="./images/hobbit.png " alt="">
+                      <img src="./images/school1.png " alt="">
+                      <img src="./images/school1.png " alt="">
                   </div>
                   <div class="product-card-info">
                       <div class="product-btn1">
-                          <a href="./product-details-The Hobbit or There and back again - fic.html" class="btn-flat btn-hover btn-shop-now">Details</a>
-<!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="FIC1" data-name="The Hobbit or There and Back Again" data-summary="summary 1" data-price="800.00" data-quantity="1" data-image="images/hobbit.png">
+                          <a href="./Acura -stationary.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="st1" data-name="Acura Seminar Badge" data-summary="summary 1" data-price="14.00" data-quantity="1" data-image="images/school1.png">
                               <i class='bx bxs-cart-add'></i>
                           </button>
 
                       </div>
                       <div class="product-card-name">
-                      <br>The Hobbit or There and Back Again
+                      <br>Acura Seminar Badge
                       </div>
                       <div class="product-card-price">
-                          <span class="curr-price">₱ 800.00</span>
+                          <span class="curr-price">₱ 14.00</span>
                       </div>
                   </div>
 
@@ -190,188 +215,717 @@
               </div>
           </div>
 
-           <div class="col-4 col-md-6 col-sm-12">
-              <div class="product-card">
-                  <div class="product-card-img">
-                      <img src="images/vege.png " alt="">
-                      <img src="images/vege.png" alt="">
-                  </div>
-                  <div class="product-card-info">
-                      <div class="product-btn1">
-                          <a href="./product-details-The Vegetarian  - fic.html" class="btn-flat btn-hover btn-shop-now">Details</a>
-<!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="FIC2" data-name="The Vegetarian" data-summary="summary 1" data-price="750.00" data-quantity="1" data-image="images/vege.png">
-                              <i class='bx bxs-cart-add'></i>
-                          </button>
+			 <div class="col-3 col-md-6 col-sm-12">
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="images/school2.png " alt="">
+                        <img src="images/school2.png" alt="">
+                    </div>
+                    <div class="product-card-info">
+                        <div class="product-btn1">
+                            <a href="./Berkeley -stationary.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+  <!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="st2" data-name="Berkeley Guntacker Br50 4-14mm" data-summary="summary 1" data-price="823.00" data-quantity="1" data-image="images/school2.png">
+                                <i class='bx bxs-cart-add'></i>
+                            </button>
+  
+                        </div>
+                        <div class="product-card-name">
+                        <br>Berkeley Guntacker Br50 4-14mm
+                        </div>
+                        <div class="product-card-price">
+                            <span class="curr-price">₱ 823.00</span>
+                        </div>
+                    </div>
+  
+  
+                </div>
+            </div>
 
-                      </div>
-                      <div class="product-card-name">
-                      <br>The Vegetarian
-                      </div>
-                      <div class="product-card-price">
-                          <span class="curr-price">₱ 750.00</span>
-                      </div>
-                  </div>
+			<div class="col-3 col-md-6 col-sm-12">
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="images/school3.png " alt="">
+                        <img src="images/school3.png" alt="">
+                    </div>
+                    <div class="product-card-info">
+                        <div class="product-btn1">
+                            <a href="Maped -stationary.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+  <!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="st3" data-name="Maped Stapler No.35 354511 20 Sheets Half Strip Advance Metal Office" data-summary="summary 1" data-price="299.00" data-quantity="1" data-image="images/school3.png">
+                                <i class='bx bxs-cart-add'></i>
+                            </button>
+  
+                        </div>
+                        <div class="product-card-name">
+                        <br>Maped Stapler No.35 354511 20 Sheets Half Strip Advance Metal Office
+                        </div>
+                        <div class="product-card-price">
+                            <span class="curr-price">₱ 299.00</span>
+                        </div>
+                    </div>
+  
+  
+                </div>
+            </div>
 
+			<div class="col-3 col-md-6 col-sm-12">
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="images/school4.png " alt="">
+                        <img src="images/school4.png" alt="">
+                    </div>
+                    <div class="product-card-info">
+                        <div class="product-btn1">
+                            <a href="./Paper trimmer -stationary.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+  <!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="st4" data-name="Paper Trimmer 1512 12x15in Wood" data-summary="summary 1" data-price="1496.00" data-quantity="1" data-image="images/school4.png">
+                                <i class='bx bxs-cart-add'></i>
+                            </button>
+  
+                        </div>
+                        <div class="product-card-name">
+                        <br>Paper Trimmer 1512 12x15in Wood
+                        </div>
+                        <div class="product-card-price">
+                            <span class="curr-price">₱ 1,496.00</span>
+                        </div>
+                    </div>
+  
+  
+                </div>
+            </div>
 
-              </div>
+			<div class="col-3 col-md-6 col-sm-12">
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="images/school5.png" alt="">
+                        <img src="images/school5.png" alt="">
+                    </div>
+                    <div class="product-card-info">
+                        <div class="product-btn1">
+                            <a href="./compass -stationary.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+  <!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="st5" data-name="Rotring Compass 529215 General Purpose" data-summary="summary 1" data-price="1076.00" data-quantity="1" data-image="images/school5.png">
+                                <i class='bx bxs-cart-add'></i>
+                            </button>
+  
+                        </div>
+                        <div class="product-card-name">
+                        <br>Rotring Compass 529215 General Purpose
+                        </div>
+                        <div class="product-card-price">
+                            <span class="curr-price">₱ 1,076</span>
+                        </div>
+                    </div>
+  
+  
+                </div>
+            </div>
+			
+            </div>
           </div>
 
-          <div class="col-4 col-md-6 col-sm-12">
-              <div class="product-card">
-                  <div class="product-card-img">
-                      <img src="images/sherlock.png " alt="">
-                      <img src="images/sherlock.png" alt="">
+          <h1 style="text-align: center;" id="fs">FILLING SUPPLIES</h1>
+
+          <div class="box">
+              <div class="row">
+  
+              <div class="col-3 col-md-6 col-sm-12">
+                  <div class="product-card">
+                      <div class="product-card-img">
+                          <img src="images/filing 1.png" alt="">
+                          <img src="images/filing 1.png" alt="">
+                      </div>
+                      <div class="product-card-info">
+                          <div class="product-btn1">
+                              <a href="./Deli -stationary.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+  <!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="st6" data-name="Deli Clipboard 9253 322x235mm Plastic Clip Plastic Material Vertical With Pen Holder Gray" data-summary="summary 1" data-price="133.00" data-quantity="1" data-image="images/filing 1.png">
+                                  <i class='bx bxs-cart-add'></i>
+                              </button>
+  
+                          </div>
+                          <div class="product-card-name">
+                          <br>Deli Clipboard 9253 322x235mm Plastic Clip Plastic Material Vertical With Pen Holder Gray
+                          </div>
+                          <div class="product-card-price">
+                              <span class="curr-price">₱ 133.00</span>
+                          </div>
+                      </div>
+  
+  
                   </div>
-                  <div class="product-card-info">
-                      <div class="product-btn1">
-                          <a href="./product-details-Adventure of Sherlock Homes - fic.html" class="btn-flat btn-hover btn-shop-now">Details</a>
-<!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="FIC3" data-name="Adventure of Sherlock Holmes" data-summary="summary 1" data-price="600.00" data-quantity="1" data-image="images/sherlock.png">
-                              <i class='bx bxs-cart-add'></i>
-                          </button>
+            </div>
 
-                      </div>
-                      <div class="product-card-name">
-                      <br>Adventure of Sherlock Holmes
-                      </div>
-                      <div class="product-card-price">
-                          <span class="curr-price">₱ 600.00</span>
-                      </div>
-                  </div>
-
-
-              </div>
-          </div>
-
-          <div class="col-4 col-md-6 col-sm-12">
-              <div class="product-card">
-                  <div class="product-card-img">
-                      <img src="images/anna.png " alt="">
-                      <img src="images/anna.png" alt="">
-                  </div>
-                  <div class="product-card-info">
-                      <div class="product-btn1">
-                          <a href="./product-details-ANNA KARENINA - fic.html" class="btn-flat btn-hover btn-shop-now">Details</a>
-<!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="FIC4" data-name="Anna Karenina" data-summary="summary 1" data-price="390.00" data-quantity="1" data-image="images/anna.png">
-                              <i class='bx bxs-cart-add'></i>
-                          </button>
-
-                      </div>
-                      <div class="product-card-name">
-                      <br>Anna Karenina
-                      </div>
-                      <div class="product-card-price">
-                          <span class="curr-price">₱ 390.00</span>
-                      </div>
-                  </div>
-
-
-              </div>
-          </div>
-
-          <div class="col-4 col-md-6 col-sm-12">
-              <div class="product-card">
-                  <div class="product-card-img">
-                      <img src="images/tgwtdt.png" alt="">
-                      <img src="images/tgwtdt.png" alt="">
-                  </div>
-                  <div class="product-card-info">
-                      <div class="product-btn1">
-                          <a href="./product-details-The Girl with the Dragon Tatoo - fic.html" class="btn-flat btn-hover btn-shop-now">Details</a>
-<!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="FIC5" data-name="The Girl with the Dragon Tattoo" data-summary="summary 1" data-price="420.00" data-quantity="1" data-image="images/tgwtdt.png">
-                              <i class='bx bxs-cart-add'></i>
-                          </button>
-
-                      </div>
-                      <div class="product-card-name">
-                      <br>The Girl with the Dragon Tattoo
-                      </div>
-                      <div class="product-card-price">
-                          <span class="curr-price">₱ 420.00</span>
-                      </div>
-                  </div>
-
-
-              </div>
-          </div>
-
-          <div class="col-4 col-md-6 col-sm-12">
+           <div class="col-3 col-md-6 col-sm-12">
             <div class="product-card">
                 <div class="product-card-img">
-                    <img src="images/tfios.jpg" alt="">
-                    <img src="images/tfios.jpg" alt="">
+                    <img src="images/filing2.png" alt="">
+                    <img src="images/filing2.png" alt="">
                 </div>
                 <div class="product-card-info">
                     <div class="product-btn1">
-                        <a href="./product-detail-tfios - fic.html" class="btn-flat btn-hover btn-shop-now">Details</a>
-<!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="FIC6" data-name="The Fault in Our Stars" data-summary="summary 1" data-price="606.64" data-quantity="1" data-image="images/tfios.jpg">
+                        <a href="./Deli expanding -stationary.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="st7" data-name="Deli Expanding File 5561 A6 12pockets Button Lock, Green" data-summary="summary 1" data-price="74.00" data-quantity="1" data-image="images/filing2.png">
                             <i class='bx bxs-cart-add'></i>
                         </button>
 
                     </div>
                     <div class="product-card-name">
-                    <br>The Fault in Our Stars
+                    <br>Deli Expanding File 5561 A6 12pockets Button Lock, Green 
                     </div>
                     <div class="product-card-price">
-                        <span class="curr-price">₱ 606.64</span>
+                        <span class="curr-price">₱ 74.00</span>
                     </div>
                 </div>
 
 
             </div>
+
+          </div>
+
+          <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/filing3.png" alt="">
+                    <img src="images/filing3.png" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./Deli zip -stationary.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="st8" data-name="Deli Zip Envelope 38976 A5 Expanding Transparent, Red" data-summary="summary 1" data-price="33.00" data-quantity="1" data-image="images/filing3.png">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                    <div class="product-card-name">
+                    <br>Deli Zip Envelope 38976 A5 Expanding Transparent, Red 
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 33.00</span>
+                    </div>
+                </div>
+
+
+            </div>
+          </div>
+
+          <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/filing4.png" alt="">
+                    <img src="images/filing4.png" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./Livin -stationary.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="st9" data-name="Livin Box File Case Ofa03 A4 2lock Plastic Transparent, Clear" data-summary="summary 1" data-price="169.00" data-quantity="1" data-image="images/filing4.png">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                    <div class="product-card-name">
+                    <br>Livin Box File Case Ofa03 A4 2lock Plastic Transparent, Clear 
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 169.00</span>
+                    </div>
+                </div>
+
+
+
+          </div>
+          </div>
+
+          <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/filing5.png" alt="">
+                    <img src="images/filing5.png" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./Shiny -stationary.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="st10" data-name="Shiny Numberer N28 Manual 7mm" data-summary="summary 1" data-price="358.00" data-quantity="1" data-image="images/filing5.png">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                    <div class="product-card-name">
+                    <br> Shiny Numberer N28 Manual 7mm
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 358.00</span>
+                    </div>
+                </div>
+
+            </div>
+          </div>     
+
+          </div>
+        </div> 
+
+        <h1 style="text-align: center;" id="ws">WRITING SUPPLIES</h1>
+
+        <div class="box">
+            <div class="row">
+
+            <div class="col-3 col-md-6 col-sm-12">
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="images/writing1.png" alt="">
+                        <img src="images/writing1.png" alt="">
+                    </div>
+                    <div class="product-card-info">
+                        <div class="product-btn1">
+                            <a href="./Derwent -stationary.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+    <!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="st11" data-name="Derwent Lightfast Coloured Pencils Tin of 72" data-summary="summary 1" data-price="9627.59" data-quantity="1" data-image="images/writing1.png">
+                                <i class='bx bxs-cart-add'></i>
+                            </button>
+    
+                        </div>
+                        <div class="product-card-name">
+                        <br> Derwent Lightfast Coloured Pencils Tin of 72
+                        </div>
+                        <div class="product-card-price">
+                            <span class="curr-price">₱ 9,627.59</span>
+                        </div>
+                    </div>
+
+                </div>
+          </div>
+
+           <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/writing2.png" alt="">
+                    <img src="images/writing2.png" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./Koh -stationary.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="st12" data-name="Koh-I-Noor Versatil 5217 Clutch Pencils Set of 6s" data-summary="summary 1" data-price="2221.75" data-quantity="1" data-image="images/writing2.png">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                    <div class="product-card-name">
+                    <br> Koh-I-Noor Versatil 5217 Clutch Pencils Set of 6
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 2,221.75</span>
+                    </div>
+                </div>
+
+            </div>
+          </div>
+
+          <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/writing3.png" alt="">
+                    <img src="images/writing3.png" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./Manuscript -stationary.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="st13" data-name="Manuscript Calligraphy Project Set " data-summary="summary 1" data-price="1196.33" data-quantity="1" data-image="images/writing3.png">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                    <div class="product-card-name">
+                    <br> Manuscript Calligraphy Project Set 
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 1,196.33</span>
+                    </div>
+                </div>
+
+            </div>
+          </div>
+
+          <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/writing4.png" alt="">
+                    <img src="images/writing4.png" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./ManuSchool -stationary.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="st14" data-name="Manuscript School Handwriting Pen Triple Pack" data-summary="summary 1" data-price="199.39" data-quantity="1" data-image="images/writing4.png">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                    <div class="product-card-name">
+                    <br> Manuscript School Handwriting Pen Triple Pack
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 199.39</span>
+                    </div>
+                </div>
+
+            </div>
+          </div>
+
+          <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/writing5.png" alt="">
+                    <img src="images/writing5.png" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./Stabilo -stationary.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="st15" data-name="STABILO BOSS Pastel Highlighter Deskset of 15" data-summary="summary 1" data-price="854.52" data-quantity="1" data-image="images/writing5.png">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                    <div class="product-card-name">
+                    <br> STABILO BOSS Pastel Highlighter Deskset of 15
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 854.52</span>
+                    </div>
+                </div>
+
+            </div>
+          </div>
+
+          </div>
         </div>
 
-         </div>
+        <h1 style="text-align: center;" id="ps">PAPER SUPPLIES</h1>
+
+        <div class="box">
+            <div class="row">
+
+            <div class="col-3 col-md-6 col-sm-12">
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="images/papersup1.png" alt="">
+                        <img src="images/papersup1.png" alt="">
+                    </div>
+                    <div class="product-card-info">
+                        <div class="product-btn1">
+                            <a href="./Daler -stationary.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+    <!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="st16" data-name="Daler-Rowney: Simply A4 Sketch Pad" data-summary="summary 1" data-price="499.00" data-quantity="1" data-image="images/papersup1.png">
+                                <i class='bx bxs-cart-add'></i>
+                            </button>
+    
+                        </div>
+                        <div class="product-card-name">
+                        <br> Daler-Rowney: Simply A4 Sketch Pad
+                        </div>
+                        <div class="product-card-price">
+                            <span class="curr-price">₱ 499.00</span>
+                        </div>
+                    </div>
+
+                </div>
+          </div>
+
+           <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/papersup2.png" alt="">
+                    <img src="images/papersup2.png" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./Gold -stationary.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="st17" data-name=" Gold Carbon Paper Long 100s Black Film" data-summary="summary 1" data-price="499.00" data-quantity="1" data-image="images/papersup2.png">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                    <div class="product-card-name">
+                    <br> Gold Carbon Paper Long 100s Black Film
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 499.00</span>
+                    </div>
+                </div>
+
+            </div>
+          </div>
+
+          <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/papersup3.png" alt="">
+                    <img src="images/papersup3.png" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./orange -stationary.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="st18" data-name="Orange Copy Paper A4 70gsm" data-summary="summary 1" data-price="240.00" data-quantity="1" data-image="images/papersup3.png">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                    <div class="product-card-name">
+                    <br>  Orange Copy Paper A4 70gsm
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 240.00</span>
+                    </div>
+                </div>
+
+            </div>
+          </div>
+
+          <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/papersup4.png" alt="">
+                    <img src="images/papersup4.png" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./Royal -stationary.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="st19" data-name="Royal & Langnickel: Essentials Watercolor Artist Paper Pad A4" data-summary="summary 1" data-price="399.00" data-quantity="1" data-image="images/papersup4.png">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                    <div class="product-card-name">
+                    <br> Royal & Langnickel: Essentials Watercolor Artist Paper Pad A4
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 399.00</span>
+                    </div>
+                </div>
+
+            </div>
+          </div>
+
+          <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/papersup5.png" alt="">
+                    <img src="images/papersup5.png" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./Talens art -stationary.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="st20" data-name="Talens Art Creation: Sketchbook Spiral 21.5 x 28cm" data-summary="summary 1" data-price="631.00" data-quantity="1" data-image="images/papersup5.png">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                    <div class="product-card-name">
+                    <br> Talens Art Creation: Sketchbook Spiral 21.5 x 28cm
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 631.00</span>
+                    </div>
+                </div>
+
+            </div>
+          </div>
 
         </div>
+    </div>
 
+          <h3 style="text-align: center;" id="cs">COLORING SUPPLIES</h3>
+
+          <div class="box">
+            <div class="row" >
+
+
+            <div class="col-3 col-md-6 col-sm-12">
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="images/color 1.png" alt="">
+                        <img src="images/color 1.png" alt="">
+                    </div>
+                    <div class="product-card-info">
+                        <div class="product-btn1">
+                            <a href="./Colored pencils -stationary.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="st21" data-name="Crayola Colored Pencils 50 Set" data-summary="summary 1" data-price="629.00" data-quantity="1" data-image="images/color 1.png">
+                                <i class='bx bxs-cart-add'></i>
+                            </button>
+
+                        </div>
+                        <div class="product-card-name">
+                        <br> Crayola Colored Pencils 50 Set
+                        </div>
+                        <div class="product-card-price">
+                            <span class="curr-price">₱ 629.00 </span>
+                        </div>
+                    </div>
+
+
+                </div>
+          </div>
+
+           <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/color 2.png" alt="">
+                    <img src="images/color 2.png" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./Crayola crayons -stationary.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="st22" data-name="Crayola Crayons, 96 Colors" data-summary="summary 1" data-price="499.00" data-quantity="1" data-image="images/color 2.png">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                    <div class="product-card-name">
+                    <br> Crayola Crayons, 96 Colors
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 499.00 </span>
+                    </div>
+                </div>
+
+
+            </div>
+          </div>
+
+          <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/color 3.png" alt="">
+                    <img src="images/color 3.png" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./Faber -stationary.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="st23" data-name="Faber Castell Polychromos: Faber Castell Polychromos Colored Pencil Set 36 Colors" data-summary="summary 1" data-price=" 3531.00" data-quantity="1" data-image="images/color 3.png">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                    <div class="product-card-name">
+                    <br> Faber Castell Polychromos: Faber Castell Polychromos Colored Pencil Set 36 Colors
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 3,531.00</span>
+                    </div>
+                </div>
+
+
+            </div>
+          </div>
+
+          <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/color 4.png" alt="">
+                    <img src="images/color 4.png" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./Kakura -stationary.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="st24" data-name="Kakura Koi pocket field 48 watercolor" data-summary="summary 1" data-price="2799.00" data-quantity="1" data-image="images/color 4.png">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                    <div class="product-card-name">
+                    <br> Kakura Koi pocket field 48 watercolor
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 2,799.00</span>
+                    </div>
+                </div>
+
+
+            </div>
+          </div>
+
+          <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/color 5.png" alt="">
+                    <img src="images/color 5.png" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./tombow - stationary.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="st25" data-name="Tombow Dual Brush Pen Set of 10 – Pastel" data-summary="summary 1" data-price="2145.00" data-quantity="1" data-image="images/color 5.png">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                    <div class="product-card-name">
+                    <br> Tombow Dual Brush Pen Set of 10 – Pastel
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 2,145.00 </span>
+                    </div>
+                </div>
+
+
+            </div>
+          </div>
+ 
+
+            </div>
+        </div>
+
+
+
+          
       </div>
     <!-- end products content -->
 
     <!-- footer -->
-    <footer class="bg-second">
-      <div class="container">
-          <div class="row">
-              <div class="col-4">
-                  <h3 class="footer-head">Additional Information</h3>
+    <div class="footer">
 
-                  <p style="text-align: justify;">The Moon Pages is one of the top publishing company in the Philippines.  It produces high quality books that every book lover deserves.  </p>
-                      <br>
-                  <p style="text-align: justify;">In addition, the firm strives to offer a welcoming environment for its customers that encourages browsing, relaxation, and an enjoyable environment.</p>
-              </div>
-              <div class="col-4 ">
-                  <h3 class="footer-head" style="text-align: center;">Connect</h3>
-                  <ul class="menu" style="text-align: center;">
-                      <a href="#" class="fa fa-facebook"></a>
-                      <a href="#" class="fa fa-twitter"></a>
-                      <a href="#" class="fa fa-instagram"></a>
-                      <a href="#" class="fa fa-google"></a>
-                  </ul>
-              </div>
-              <div class="col-4 ">
-                  <h3 class="footer-head" style="text-align: center;">Address</h3>
-                  <ul class="menu">
-                      <p style="text-align: center;">Robinsons Pioneer Complex Pioneer St.</br>
-                          Mandaluyong City 1550 Philippines</p>
-                          <br>
-                          <h3 style="text-align: center;">CONTACT</h3><br>
-                       <p style="text-align: center;">TCPinquire@gmail.com
-
-                       <br/>0998-527-6381
-
-                       <br/>863-30114</p>
-                  </ul>
-              </div>
-
-          </div>
-      </div>
-      <div class="footer-copyright text-center" style="text-align: center;">© 2021 The City Pages
-          <br/>ALL RIGHTS RESERVED.</div>
-  </footer>
+        <div class="box-container">
+    
+            <div class="box">
+                <h3>additional info</h3>
+                <p>Searching for a diverse selection of arts and crafts? The Attic Library encourages you to learn while
+                    boosting your artistic and creative abilities. Find the latest up-to-date art supplies and DIY crafts.</p>
+            </div>
+    
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#">home</a>
+                <a href="#">about</a>
+                <a href="#">review</a>
+                <a href="#">contact</a>
+            </div>
+    
+            <div class="box">
+                <h3>follow us</h3>
+                    <a href="#">facebook</a>
+                    <a href="#">instagram</a>
+                    <a href="#">pinterest</a>
+                    <a href="#">twitter</a>
+            </div>
+    
+            <div class="box">
+                <h3>contact info</h3>
+                <div class="info">
+                    <i class="fas fa-phone"></i>
+                    <p> 0998-527-6381 <br> 863-30114 </p>
+                </div>
+                <div class="info">
+                    <i class="fas fa-envelope"></i>
+                    <p> TCPinquire@gmail.com <br> brightinc@gmail.com </p>
+                </div>
+                <div class="info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p> Robinsons Pioneer
+                        <br> Mandaluyong City, Philippines </p>
+                </div>
+            </div>
+    
+        </div>
+    
+        <h1 class="credit"> &copy; copyright @ 2020 by Bright Ideas Inc. </h1>
+    
+    </div>
     <!-- end footer -->
 
     <!-- app js -->
-    <script src="app.js"></script>
-    <script src="fic.js"></script>
+    <script src="./js/app.js"></script>
 
     <!-- ADDTOCART JS -->
     <script src="js/jquery-2.2.3.min.js"></script>
@@ -432,5 +986,4 @@
     <!-- ADDTOCART JS END -->
 
 </body>
-
 </html>

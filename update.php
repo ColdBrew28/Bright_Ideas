@@ -18,12 +18,36 @@
 		    </div>
 		   <?php } ?>
 		   <div class="form-group">
-		     <label for="name">Name</label>
-		     <input type="name" 
+		     <label for="name">First Name</label>
+		     <input type="firstname" 
 		           class="form-control" 
-		           id="name" 
-		           name="name" 
-		           value="<?=$row['name'] ?>" >
+		           id="firstname" 
+		           name="firstname" 
+		           value="<?php if(isset($_GET['firstname']))
+		                           echo($_GET['firstname']); ?>" 
+		           placeholder="Enter firstname">
+		   </div>
+
+		   <div class="form-group">
+		     <label for="email">Last Name</label>
+		     <input type="lastname" 
+		           class="form-control" 
+		           id="lastname" 
+		           name="lastname" 
+		           value="<?php if(isset($_GET['lastname']))
+		                           echo($_GET['lastname']); ?>"
+		           placeholder="Enter lastname">
+		   </div>
+
+		   <div class="form-group">
+		     <label for="email">Username</label>
+		     <input type="username" 
+		           class="form-control" 
+		           id="username" 
+		           name="username" 
+		           value="<?php if(isset($_GET['username']))
+		                           echo($_GET['username']); ?>"
+		           placeholder="Enter username">
 		   </div>
 
 		   <div class="form-group">
@@ -32,8 +56,22 @@
 		           class="form-control" 
 		           id="email" 
 		           name="email" 
-		           value="<?=$row['email'] ?>" >
+		           value="<?php if(isset($_GET['email']))
+		                           echo($_GET['email']); ?>"
+		           placeholder="Enter email">
 		   </div>
+
+		   <div class="form-group">
+		     <label for="email">Password</label>
+		     <input type="password" 
+		           class="form-control" 
+		           id="password" 
+		           name="password" 
+		           value="<?php if(isset($_GET['password']))
+		                           echo($_GET['password']); ?>"
+		           placeholder="Enter password">
+		   </div>
+
 		   <input type="text" 
 		          name="id"
 		          value="<?=$row['id']?>"
@@ -44,7 +82,7 @@
 		           name="update">Update</button>
 		    <a href="read.php" class="btn btn-warning">View</a>
 			<br>
-			<a href="index.html" class="btn btn-success">Go to Moon Pages Bookstore</a>
+			<a href="index.html" class="btn btn-success">Go to THE ATTIC LIBRARY Bookstore</a>
 	    </form>
 	</div>
 </body>

@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- ADDTOCART STYLE -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+    .badge-notify{
+      background:red;
+      position:relative;
+      top: -20px;
+      right: 10px;
+    }
+    .my-cart-icon-affix {
+      padding-top: 15px;
+      padding-left: 12px;
+      padding-bottom: 10px;
+      position: fixed;
+      z-index: 999;
+      background: linear-gradient(to right,#F38181,#FCE38A,#95E1D3);
+      border-radius: 10px
+    }
+    </style>
+    <!-- ADDTOCART STYLE END -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOP | THE ATTIC LIBRARY</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- app css -->
+    <link rel="stylesheet" href="shop.css">
+    <link rel="shortcut icon" type="image/png" href="images/logo - Copy.png">
+</head>
+
+<body>
+
+    <!-- TEST dont copy-->
+    <!--logic id="answer"></logic-->
+    <!-- TEST END-->
+
+    <!-- header -->
+    <header>
+        <!-- mobile menu -->
+        <div class="mobile-menu bg-second">
+            <a href="#" class="mb-logo">THE ATTIC LIBRARY</a>
+            <span class="mb-menu-toggle" id="mb-menu-toggle">
+                <i class='bx bx-menu'></i>
+            </span>
+        </div>
+        <!-- end mobile menu -->
+        <!-- main header -->
+        <div class="header-wrapper" id="header-wrapper">
+            <span class="mb-menu-toggle mb-menu-close" id="mb-menu-close">
+                <i class='bx bx-x'></i>
+            </span>
+            <!-- top header -->
+            <div class="bg-second">
+                <div class="top-header container">
+                    <ul class="devided">
+                        <li>
+                            <a href="#">863-30114</a>
+                        </li>
+                        <li>
+                            <a href="#">TCPinquire@gmail.com</a>
+                        </li>
+                    </ul>
+                    <ul class="devided">
+                        <li class="dropdown">
+                            <a href="">USD</a>
+                            <i class='bx bxs-chevron-down'></i>
+                            <ul class="dropdown-content">
+                                <li><a href="#">VND</a></li>
+                                <li><a href="#">JPY</a></li>
+                                <li><a href="#">EUR</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="">ENGLISH</a>
+                            <i class='bx bxs-chevron-down'></i>
+                            <ul class="dropdown-content">
+                                <li><a href="#">VIETNAMESE</a></li>
+                                <li><a href="#">JAPANESE</a></li>
+                                <li><a href="#">FRENCH</a></li>
+                                <li><a href="#">SPANISH</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">ORDER TRACKING</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end top header -->
+            <!-- mid header -->
+            <div class="bg-main">
+                <div class="mid-header container1">
+                  <a class="navbar-brand" href="index.html"><img src="images/logoattic.png"></a>
+                    <div class="search">
+                        <input type="text" placeholder="Search">
+                        <i class='bx bx-search-alt'></i>
+                    </div>
+                    <ul class="user-menu">
+                        <li><a href="#"><i class='bx bx-bell'></i></a></li>
+                        <li><a href="index.php"><i class='bx bx-user-circle'></i></a></li>
+<!-- CART ICON -->      <li><a href="#"><i class='glyphicon glyphicon-shopping-cart my-cart-icon bx bx-cart'><span class="badge badge-notify my-cart-badge"></span></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end mid header -->
+            <!-- bottom header -->
+            <div class="bg-second">
+                <div class="bottom-header container">
+                    <ul class="main-menu">
+                        <li><a href="index.html">home</a></li>
+                        <!-- mega menu -->
+                        <li class="mega-dropdown">
+                            <a href="./shop.html">Shop<i class='bx bxs-chevron-down'></i></a>
+                            <div class="mega-content">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="box">
+                                            <h3>Categories</h3>
+                                            <ul>
+                                                <li><a href="ent.html">Arts and Crafts</a></li>
+                                                <li><a href="fichis.html">Books</a></li>
+                                                <li><a href="fic.html">Stationary</a></li>
+                                                <li><a href="his.html">Toys and Games</a></li>
+                                                <li><a href="hor.html">Workstation</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- end mega menu -->
+                        <li><a href="about us.html">About Us</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end bottom header -->
+        </div>
+        <!-- end main header -->
+    </header>
+    <!-- end header -->
+
+            <div class="bg-main">
+            <div class="container">
+                <div class="box">
+                    <div class="breadcumb">
+                        <a href="index.html">home</a>
+                        <span><i class='bx bxs-chevrons-right'></i></span>
+                        <a href="shop.html">all products</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="row" >
+    
+    
+                  <div class="col-3 col-md-6 col-sm-12">
+                    <div class="product-card">
+                        <div class="product-card-img">
+                            <img src="images/av1.png" alt="">
+                            <img src="images/av1.png" alt="">
+                        </div>
+                        <div class="product-card-info">
+                            <div class="product-btn1">
+                                <a href="./av1.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="av1" data-name="Golf Earphone M1 Bean Type, White" data-summary="summary 1" data-price="175.00" data-quantity="1" data-image="images/av1.png">
+                                    <i class='bx bxs-cart-add'></i>
+                                </button>
+    
+                            </div>
+                            <div class="product-card-name">
+                            <br>Golf Earphone M1 Bean Type, White
+                            </div>
+                            <div class="product-card-price">
+                                <span class="curr-price">₱ 175.00</span>
+                            </div>
+                        </div>
+    
+    
+                    </div>
+                </div>
+    
+                 <div class="col-3 col-md-6 col-sm-12">
+                    <div class="product-card">
+                        <div class="product-card-img">
+                            <img src="images/av2.png" alt="">
+                            <img src="images/av2.png" alt="">
+                        </div>
+                        <div class="product-card-info">
+                            <div class="product-btn1">
+                                <a href="./av2.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->         <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="av2" data-name="Golf Earphone M16, Black" data-summary="summary 1" data-price="175.00" data-quantity="1" data-image="images/av2.png">
+                                    <i class='bx bxs-cart-add'></i>
+                                </button>
+    
+                            </div>
+                            <div class="product-card-name">
+                            <br>Golf Earphone M16, Black
+                            </div>
+                            <div class="product-card-price">
+                                <span class="curr-price">₱ 175.00</span>
+                            </div>
+                        </div>
+    
+    
+                    </div>
+                </div>
+    
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="product-card">
+                        <div class="product-card-img">
+                            <img src="images/av3.png" alt="">
+                            <img src="images/av3.png" alt="">
+                        </div>
+                        <div class="product-card-info">
+                            <div class="product-btn1">
+                                <a href="./av3.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="av3" data-name="Onda Earphone B1S Black in Ear Wireless Bluetooth " data-summary="summary 1" data-price="495.00" data-quantity="1" data-image="images/av3.png">
+                                    <i class='bx bxs-cart-add'></i>
+                                </button>
+    
+                            </div>
+                            <div class="product-card-name">
+                            <br>Onda Earphone B1S Black In Ear Wireless Bluetooth
+                            </div>
+                            <div class="product-card-price">
+                                <span class="curr-price">₱ 495.00</span>
+                            </div>
+                        </div>
+    
+    
+                    </div>
+                </div>
+    
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="product-card">
+                        <div class="product-card-img">
+                            <img src="images/av4.png" alt="">
+                            <img src="images/av4.png" alt="">
+                        </div>
+                        <div class="product-card-info">
+                            <div class="product-btn1">
+                                <a href="./av4.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="av4" data-name="Yoobao Wireless Speaker M1 Bluetooth Portable, Black " data-summary="summary 1" data-price="535.00" data-quantity="1" data-image="images/av4.png">
+                                    <i class='bx bxs-cart-add'></i>
+                                </button>
+    
+                            </div>
+                            <div class="product-card-name">
+                            <br>Yoobao Wireless Speaker M1 Bluetooth Portable, Black
+                            </div>
+                            <div class="product-card-price">
+                                <span class="curr-price">₱ 535.00</span>
+                            </div>
+                        </div>
+    
+    
+                    </div>
+                </div>
+    
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="product-card">
+                        <div class="product-card-img">
+                            <img src="images/av5.png" alt="">
+                            <img src="images/av5.png" alt="">
+                        </div>
+                        <div class="product-card-info">
+                            <div class="product-btn1">
+                                <a href="./av5.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="av5" data-name="Yoobao Wireless Speaker M1 Bluetooth Portable, Blue" data-summary="summary 1" data-price="535.00" data-quantity="1" data-image="images/av5.png">
+                                    <i class='bx bxs-cart-add'></i>
+                                </button>
+    
+                            </div>
+                            <div class="product-card-name">
+                            <br>Yoobao Wireless Speaker M1 Bluetooth Portable, Blue
+                            </div>
+                            <div class="product-card-price">
+                                <span class="curr-price">₱ 535.00</span>
+                            </div>
+                        </div>
+    
+    
+                    </div>
+                </div>
+
+                           
+            
+                          <div class="col-3 col-md-6 col-sm-12">
+                            <div class="product-card">
+                                <div class="product-card-img">
+                                    <img src="images/ca1.png" alt="">
+                                    <img src="images/ca1.png" alt="">
+                                </div>
+                                <div class="product-card-info">
+                                    <div class="product-btn1">
+                                        <a href="./ca1.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ca1" data-name="Canon Ink Cartridge PG-81 Black" data-summary="summary 1" data-price="999.00" data-quantity="1" data-image="images/ca1.png>                                            <i class='bx bxs-cart-add'></i>
+                                        </button>
+            
+                                    </div>
+                                    <div class="product-card-name">
+                                    <br>CANON INK CARTRIDGE PG-81 BLACK
+                                    </div>
+                                    <div class="product-card-price">
+                                        <span class="curr-price">₱ 999.00</span>
+                                    </div>
+                                </div>
+            
+            
+                            </div>
+                        </div>
+            
+                         <div class="col-3 col-md-6 col-sm-12">
+                            <div class="product-card">
+                                <div class="product-card-img">
+                                    <img src="images/ca2.png" alt="">
+                                    <img src="images/ca2.png" alt="">
+                                </div>
+                                <div class="product-card-info">
+                                    <div class="product-btn1">
+                                        <a href="./ca2.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ca2" data-name="Hewlett Packard Flashdrive X795W 16GB 3.0 Metal" data-summary="summary 1" data-price="1263.00" data-quantity="1" data-image="images/ca2.png">
+                                            <i class='bx bxs-cart-add'></i>
+                                        </button>
+            
+                                    </div>
+                                    <div class="product-card-name">
+                                    <br>HEWLETT PACKARD FLASHDRIVE X795W 16GB 3.0 METAL
+                                    </div>
+                                    <div class="product-card-price">
+                                        <span class="curr-price">₱ 1,263.00</span>
+                                    </div>
+                                </div>
+            
+            
+                            </div>
+                        </div>
+            
+                        <div class="col-3 col-md-6 col-sm-12">
+                            <div class="product-card">
+                                <div class="product-card-img">
+                                    <img src="images/ca3.png" alt="">
+                                    <img src="images/ca3.png" alt="">
+                                </div>
+                                <div class="product-card-info">
+                                    <div class="product-btn1">
+                                        <a href="./ca3.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ca3" data-name="Hewlett Packard MOuse Z5000 White Bluetooth Function" data-summary="summary 1" data-price="1471.00" data-quantity="1" data-image="images/ca3.png">
+                                            <i class='bx bxs-cart-add'></i>
+                                        </button>
+            
+                                    </div>
+                                    <div class="product-card-name">
+                                    <br>HEWLETT PACKARD MOUSE Z5000 WHITE BLUETOOTH FUNCTION
+                                    </div>
+                                    <div class="product-card-price">
+                                        <span class="curr-price">₱ 1,471.00</span>
+                                    </div>
+                                </div>
+            
+            
+                            </div>
+                        </div>
+            
+                        <div class="col-3 col-md-6 col-sm-12">
+                            <div class="product-card">
+                                <div class="product-card-img">
+                                    <img src="images/ca4.png" alt="">
+                                    <img src="images/ca4.png" alt="">
+                                </div>
+                                <div class="product-card-info">
+                                    <div class="product-btn1">
+                                        <a href="./ca4.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ca4" data-name="Seagate Hard Drive 1TB 2.5 One-Touch Slim Black - School Office Work from Home Essentials" data-summary="summary 1" data-price="4122.00" data-quantity="1" data-image="images/ca4.png">
+                                            <i class='bx bxs-cart-add'></i>
+                                        </button>
+            
+                                    </div>
+                                    <div class="product-card-name">
+                                    <br>CA4 - Seagate Hard Drive 1TB 2.5 One-Touch Slim Black - School Office Work from Home Essentials
+                                    </div>
+                                    <div class="product-card-price">
+                                        <span class="curr-price">₱ 4,122.00</span>
+                                    </div>
+                                </div>
+            
+            
+                            </div>
+                        </div>
+            
+                        <div class="col-3 col-md-6 col-sm-12">
+                            <div class="product-card">
+                                <div class="product-card-img">
+                                    <img src="images/ca5.png" alt="">
+                                    <img src="images/ca5.png" alt="">
+                                </div>
+                                <div class="product-card-info">
+                                    <div class="product-btn1">
+                                        <a href="./ca5.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ca5" data-name="Wireless Keyboard Bluetooth Rechargeable Slim" data-summary="summary 1" data-price="764.00" data-quantity="1" data-image="images/ca5.png">
+                                            <i class='bx bxs-cart-add'></i>
+                                        </button>
+            
+                                    </div>
+                                    <div class="product-card-name">
+                                    <br>Wireless Keyboard Bluetooth Rechargeable Slim
+                                    </div>
+                                    <div class="product-card-price">
+                                        <span class="curr-price">₱ 764.00</span>
+                                    </div>
+                                </div>
+            
+            
+                            </div>
+                        </div>
+
+                        <div class="col-3 col-md-6 col-sm-12">
+                            <div class="product-card">
+                                <div class="product-card-img">
+                                    <img src="images/hde1.png" alt="">
+                                    <img src="images/hde1.png" alt="">
+                                </div>
+                                <div class="product-card-info">
+                                    <div class="product-btn1">
+                                        <a href="./hde1.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="hde1" data-name="Lindrande" data-summary="summary 1" data-price="790.00" data-quantity="1" data-image="images/hde1.png">
+                                            <i class='bx bxs-cart-add'></i>
+                                        </button>
+            
+                                    </div>
+                                    <div class="product-card-name">
+                                    <br>LINDRANDE
+                                    </div>
+                                    <div class="product-card-price">
+                                        <span class="curr-price">₱ 790</span>
+                                    </div>
+                                </div>
+            
+            
+                            </div>
+                        </div>
+            
+                         <div class="col-3 col-md-6 col-sm-12">
+                            <div class="product-card">
+                                <div class="product-card-img">
+                                    <img src="images/hde2.png" alt="">
+                                    <img src="images/hde2.png" alt="">
+                                </div>
+                                <div class="product-card-info">
+                                    <div class="product-btn1">
+                                        <a href="./hde2.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="hde2" data-name="Stockholm" data-summary="summary 1" data-price="790.00" data-quantity="1" data-image="images/hde2.png">
+                                            <i class='bx bxs-cart-add'></i>
+                                        </button>
+            
+                                    </div>
+                                    <div class="product-card-name">
+                                    <br>STOCKHOLM
+                                    </div>
+                                    <div class="product-card-price">
+                                        <span class="curr-price">₱ 790</span>
+                                    </div>
+                                </div>
+            
+            
+                            </div>
+                        </div>
+            
+                        <div class="col-3 col-md-6 col-sm-12">
+                            <div class="product-card">
+                                <div class="product-card-img">
+                                    <img src="images/hde3.png" alt="">
+                                    <img src="images/hde3.png" alt="">
+                                </div>
+                                <div class="product-card-info">
+                                    <div class="product-btn1">
+                                        <a href="./hde3.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="hde3" data-name="Hönefoss" data-summary="summary 1" data-price="890.00" data-quantity="1" data-image="images/hde3.png">
+                                            <i class='bx bxs-cart-add'></i>
+                                        </button>
+            
+                                    </div>
+                                    <div class="product-card-name">
+                                    <br>HÖNEFOSS
+                                    </div>
+                                    <div class="product-card-price">
+                                        <span class="curr-price">₱ 890 / 10 pack</span>
+                                    </div>
+                                </div>
+            
+            
+                            </div>
+                        </div>
+            
+                        <div class="col-3 col-md-6 col-sm-12">
+                            <div class="product-card">
+                                <div class="product-card-img">
+                                    <img src="images/hde4.png" alt="">
+                                    <img src="images/hde4.png" alt="">
+                                </div>
+                                <div class="product-card-info">
+                                    <div class="product-btn1">
+                                        <a href="./hde4.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="hde4" data-name="Olivblad" data-summary="summary 1" data-price="1490.00" data-quantity="1" data-image="images/hde4.png">
+                                            <i class='bx bxs-cart-add'></i>
+                                        </button>
+            
+                                    </div>
+                                    <div class="product-card-name">
+                                    <br>OLIVBLAD
+                                    </div>
+                                    <div class="product-card-price">
+                                        <span class="curr-price">₱ 1,490</span>
+                                    </div>
+                                </div>
+            
+            
+                            </div>
+                        </div>
+            
+                        <div class="col-3 col-md-6 col-sm-12">
+                            <div class="product-card">
+                                <div class="product-card-img">
+                                    <img src="images/hde5.png" alt="">
+                                    <img src="images/hde5.png" alt="">
+                                </div>
+                                <div class="product-card-info">
+                                    <div class="product-btn1">
+                                        <a href="./hde5.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="hde5" data-name="Sportslig" data-summary="summary 1" data-price="990.00" data-quantity="1" data-image="images/hde5.png">
+                                            <i class='bx bxs-cart-add'></i>
+                                        </button>
+            
+                                    </div>
+                                    <div class="product-card-name">
+                                    <br>SPORTSLIG
+                                    </div>
+                                    <div class="product-card-price">
+                                        <span class="curr-price">₱ 990</span>
+                                    </div>
+                                </div>
+            
+            
+                            </div>
+                        </div>
+
+                        <div class="col-3 col-md-6 col-sm-12">
+                            <div class="product-card">
+                                <div class="product-card-img">
+                                    <img src="images/oe1.png" alt="">
+                                    <img src="images/oe1.png" alt="">
+                                </div>
+                                <div class="product-card-info">
+                                    <div class="product-btn1">
+                                        <a href="./oe1.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+            <!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="oe1" data-name="Sunworld Laminator JLM02 320 A3 Heavy Duty Hot And Cold Metal " data-summary="summary 1" data-price="5099.00" data-quantity="1" data-image="images/oe1.png">
+                                            <i class='bx bxs-cart-add'></i>
+                                        </button>
+            
+                                    </div>
+                                    <div class="product-card-name">
+                                    <br>Sunworld Laminator Jlm02 320 A3 Heavy Duty Hot And Cold Metal
+                                    </div>
+                                    <div class="product-card-price">
+                                        <span class="curr-price">₱ 5,099.00</span>
+                                    </div>
+                                </div>
+            
+            
+                            </div>
+                        </div>
+            
+                         <div class="col-3 col-md-6 col-sm-12">
+                            <div class="product-card">
+                                <div class="product-card-img">
+                                    <img src="images/oe2.png" alt="">
+                                    <img src="images/oe2.png" alt="">
+                                </div>
+                                <div class="product-card-info">
+                                    <div class="product-btn1">
+                                        <a href="./oe2.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="oe2" data-name="Sharp Handheld Calculator El250s 8Digits Dual Power With Tax White" data-summary="summary 1" data-price="264.00" data-quantity="1" data-image="images/oe2.png">
+                                            <i class='bx bxs-cart-add'></i>
+                                        </button>
+            
+                                    </div>
+                                    <div class="product-card-name">
+                                    <br>Sharp Handheld Calculator El250s 8digits Dual Power With Tax White
+                                    </div>
+                                    <div class="product-card-price">
+                                        <span class="curr-price">₱ 264.00</span>
+                                    </div>
+                                </div>
+            
+            
+                            </div>
+                        </div>
+        
+                        <div class="col-3 col-md-6 col-sm-12">
+                            <div class="product-card">
+                                <div class="product-card-img">
+                                    <img src="images/oe3.png" alt="">
+                                    <img src="images/oe3.png" alt="">
+                                </div>
+                                <div class="product-card-info">
+                                    <div class="product-btn1">
+                                        <a href="./oe3.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="oe3" data-name="Smart Pocket Wifi LTE" data-summary="summary 1" data-price=" 1295.00" data-quantity="1" data-image="images/oe3.png">
+                                            <i class='bx bxs-cart-add'></i>
+                                        </button>
+            
+                                    </div>
+                                    <div class="product-card-name">
+                                    <br>Smart Pocket Wifi LTE
+                                    </div>
+                                    <div class="product-card-price">
+                                        <span class="curr-price">₱ 1,295.00</span>
+                                    </div>
+                                </div>
+            
+                            </div>
+                        </div>
+            
+                        <div class="col-3 col-md-6 col-sm-12">
+                            <div class="product-card">
+                                <div class="product-card-img">
+                                    <img src="images/oe4.png" alt="">
+                                    <img src="images/oe4.png" alt="">
+                                </div>
+                                <div class="product-card-info">
+                                    <div class="product-btn1">
+                                        <a href="./oe4.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="oe4" data-name="Starpoint Media Shredder Strip Cut S170 7Sheets 300X185X320Mm" data-summary="summary 1" data-price="3199.00" data-quantity="1" data-image="images/oe4.png">
+                                            <i class='bx bxs-cart-add'></i>
+                                        </button>
+            
+                                    </div>
+                                    <div class="product-card-name">
+                                    <br>Starpoint Media Shredder Strip Cut S170 7 Sheets 300 X 185 X 320Mm
+                                    </div>
+                                    <div class="product-card-price">
+                                        <span class="curr-price">₱ 3,199.00</span>
+                                    </div>
+                                </div>
+            
+                            </div>
+                        </div>
+        
+                        <div class="col-3 col-md-6 col-sm-12">
+                            <div class="product-card">
+                                <div class="product-card-img">
+                                    <img src="images/oe5.png" alt="">
+                                    <img src="images/oe5.png" alt="">
+                                </div>
+                                <div class="product-card-info">
+                                    <div class="product-btn1">
+                                        <a href="./oe5.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="oe5" data-name="Yokatta Biometric Fx100 Standalone Fingerprint Reader" data-summary="summary 1" data-price="8075.00" data-quantity="1" data-image="images/oe5.png">
+                                            <i class='bx bxs-cart-add'></i>
+                                        </button>
+            
+                                    </div>
+                                    <div class="product-card-name">
+                                    <br>Yokatta Biometric Fx100 Standalone Fingerprint Reader
+                                    </div>
+                                    <div class="product-card-price">
+                                        <span class="curr-price">₱ 8,075.00</span>
+                                    </div>
+                                </div>
+            
+                            </div>
+                        </div>
+
+            </div>
+                </div>
+    
+          <div class="box">
+              <ul class="pagination">
+                <li><a href="shop7.html"><i class='bx bxs-chevron-left'></i></a></li>
+                <li><a href="shop.html">1</a></li>
+                <li><a href="shop2.html">2</a></li>
+                <li><a href="shop3.html">3</a></li>
+                <li><a href="shop4.html">4</a></li>
+                <li><a href="shop5.html"  >5</a></li>
+                <li><a href="shop6.html">6</a></li>
+                <li><a href="shop7.html">7</a></li>
+                <li><a href="shop8.html"   class="active">8</a></li>
+                <li><a href="shop9.html">9</a></li>
+                <li><a href="shop9.html"><i class='bx bxs-chevron-right'></i></a></li>
+              </ul>
+          </div>
+      </div>
+    <!-- end products content -->
+
+    <!-- footer -->
+    <div class="footer">
+
+        <div class="box-container">
+    
+            <div class="box">
+                <h3>additional info</h3>
+                <p>Searching for a diverse selection of arts and crafts? The Attic Library encourages you to learn while
+                    boosting your artistic and creative abilities. Find the latest up-to-date art supplies and DIY crafts.</p>
+            </div>
+    
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#">home</a>
+                <a href="#">about</a>
+                <a href="#">review</a>
+                <a href="#">contact</a>
+            </div>
+    
+            <div class="box">
+                <h3>follow us</h3>
+                    <a href="#">facebook</a>
+                    <a href="#">instagram</a>
+                    <a href="#">pinterest</a>
+                    <a href="#">twitter</a>
+            </div>
+    
+            <div class="box">
+                <h3>contact info</h3>
+                <div class="info">
+                    <i class="fas fa-phone"></i>
+                    <p> 0998-527-6381 <br> 863-30114 </p>
+                </div>
+                <div class="info">
+                    <i class="fas fa-envelope"></i>
+                    <p> TCPinquire@gmail.com <br> brightinc@gmail.com </p>
+                </div>
+                <div class="info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p> Robinsons Pioneer
+                        <br> Mandaluyong City, Philippines </p>
+                </div>
+            </div>
+    
+        </div>
+    
+        <h1 class="credit"> &copy; copyright @ 2020 by Bright Ideas Inc. </h1>
+    
+    </div>
+    <!-- end footer -->
+
+    <!-- app js -->
+    <script src="./js/app.js"></script>
+
+    <!-- ADDTOCART JS -->
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script type='text/javascript' src="js/bootstrap.min.js"></script>
+    <script type='text/javascript' src="js/jquery.mycart.js"></script>
+    <script type="text/javascript">
+    $(function () {
+
+      var goToCartIcon = function($addTocartBtn){
+        var $cartIcon = $(".my-cart-icon");
+        var $image = $('<img width="30px" height="30px" src="' + $addTocartBtn.data("image") + '"/>').css({"position": "fixed", "z-index": "999"});
+        $addTocartBtn.prepend($image);
+        var position = $cartIcon.position();
+        $image.animate({
+          top: position.top,
+          left: position.left
+        }, 500 , "linear", function() {
+          $image.remove();
+        });
+      }
+
+      $('.my-cart-btn').myCart({
+        currencySymbol: '₱',
+        classCartIcon: 'my-cart-icon',
+        classCartBadge: 'my-cart-badge',
+        classProductQuantity: 'my-product-quantity',
+        classProductRemove: 'my-product-remove',
+        classCheckoutCart: 'my-cart-checkout',
+        affixCartIcon: true,
+        showCheckoutModal: true,
+        numberOfDecimals: 2,
+
+        clickOnAddToCart: function($addTocart){
+          goToCartIcon($addTocart);
+        },
+        afterAddOnCart: function(products, totalPrice, totalQuantity) {
+          console.log("afterAddOnCart", products, totalPrice, totalQuantity);
+        },
+        clickOnCartIcon: function($cartIcon, products, totalPrice, totalQuantity) {
+          console.log("cart icon clicked", $cartIcon, products, totalPrice, totalQuantity);
+        },
+        checkoutCart: function(products, totalPrice, totalQuantity) {
+          document.getElementById('answer').innerHTML="THIS NO: " + totalPrice + "THIS NO: " +totalQuantity;
+        },
+        getDiscountPrice: function(products, totalPrice, totalQuantity) {
+          console.log("calculating discount", products, totalPrice, totalQuantity);
+          return totalPrice * 0.8;
+        }
+      });
+
+      $("#addNewProduct").click(function(event) {
+        var currentElementNo = $(".row").children().length + 1;
+        $(".row").append('<div class="col-md-3 text-center"><img src="images/img_empty.png" width="150px" height="150px"><br>product ' + currentElementNo + ' - <strong>$' + currentElementNo + '</strong><br><button class="btn btn-danger my-cart-btn" data-id="' + currentElementNo + '" data-name="product ' + currentElementNo + '" data-summary="summary ' + currentElementNo + '" data-price="' + currentElementNo + '" data-quantity="1" data-image="images/img_empty.png">Add to Cart</button><a href="#" class="btn btn-info">Details</a></div>')
+      });
+    });
+
+    </script>
+    <!-- ADDTOCART JS END -->
+
+</body>
+</html>

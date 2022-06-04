@@ -18,7 +18,7 @@
       padding-bottom: 10px;
       position: fixed;
       z-index: 999;
-      background-color: orange;
+      background: linear-gradient(to right,#F38181,#FCE38A,#95E1D3);
       border-radius: 10px
     }
     </style>
@@ -27,26 +27,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fictional Historical Books | Moon Pages</title>
+    <title>BOOKS | THE ATTIC LIBRARY</title>
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
     <!-- boxicons -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
     <!-- app css -->
     <link rel="stylesheet" href="shop.css">
-    <link rel="shortcut icon" type="image/png" href="small.png">
+    <link rel="shortcut icon" type="image/png" href="images/logo - Copy.png">
 </head>
 
 <body>
+
+    <!-- TEST dont copy-->
+    <!--logic id="answer"></logic-->
+    <!-- TEST END-->
 
     <!-- header -->
     <header>
         <!-- mobile menu -->
         <div class="mobile-menu bg-second">
-            <a href="#" class="mb-logo">Moon Pages</a>
+            <a href="#" class="mb-logo">THE ATTIC LIBRARY</a>
             <span class="mb-menu-toggle" id="mb-menu-toggle">
                 <i class='bx bx-menu'></i>
             </span>
@@ -96,14 +102,14 @@
             <!-- mid header -->
             <div class="bg-main">
                 <div class="mid-header container1">
-                  <a class="navbar-brand" href="index.html"><img src="logo (2).png"></a>
+                  <a class="navbar-brand" href="index.html"><img src="images/logoattic.png"></a>
                     <div class="search">
                         <input type="text" placeholder="Search">
                         <i class='bx bx-search-alt'></i>
                     </div>
                     <ul class="user-menu">
                         <li><a href="#"><i class='bx bx-bell'></i></a></li>
-                        <li><a href="signlog.html"><i class='bx bx-user-circle'></i></a></li>
+                        <li><a href="index.php"><i class='bx bx-user-circle'></i></a></li>
 <!-- CART ICON -->      <li><a href="#"><i class='glyphicon glyphicon-shopping-cart my-cart-icon bx bx-cart'><span class="badge badge-notify my-cart-badge"></span></i></a></li>
                     </ul>
                 </div>
@@ -116,7 +122,7 @@
                         <li><a href="index.html">home</a></li>
                         <!-- mega menu -->
                         <li class="mega-dropdown">
-                            <a href="./fichis.html">Shop<i class='bx bxs-chevron-down'></i></a>
+                            <a href="./shop.html">Shop<i class='bx bxs-chevron-down'></i></a>
                             <div class="mega-content">
                                 <div class="row">
                                     <div class="col-12">
@@ -124,16 +130,14 @@
                                             <h3>Categories</h3>
                                             <ul>
                                                 <li><a href="shop.html">All Products</a></li>
-                                                <li><a href="ent.html">Entertainment</a></li>
-                                                <li><a href="fichis.html">Fictional Historical</a></li>
-                                                <li><a href="fic.html">Fiction</a></li>
-                                                <li><a href="his.html">History</a></li>
-                                                <li><a href="hor.html">Horror</a></li>
-                                                <li><a href="educ.html">Educational</a></li>
+                                                <li><a href="ent.html">Arts and Crafts</a></li>
+                                                <li><a href="fichis.html">Books</a></li>
+                                                <li><a href="fic.html">Stationary</a></li>
+                                                <li><a href="his.html">Toys and Games</a></li>
+                                                <li><a href="hor.html">Workstation</a></li>
                                             </ul>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </li>
@@ -156,33 +160,53 @@
                 <div class="breadcumb">
                     <a href="index.html">home</a>
                     <span><i class='bx bxs-chevrons-right'></i></span>
-                    <a href="fichis.html">Fictional Historical Books</a>
-					<h1 style="text-align: center;">Fictional Historical Books</h1>
+                    <a href="fichis.html">BOOKS</a> 
+                    <li class="mega-dropdown">
+                        <a href="./fichis.html">BOOKS<i class='bx bxs-chevron-down'></i></a>
+                        <div class="mega-content">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="box">
+                                        <h3>BOOKS CATEGORIES</h3>
+                                        <ul>
+                                            <li><a href="#acad">ACADEMIC BOOKS</a></li>
+                                            <li><a href="#child">CHILDREN'S BOOK</a></li>
+                                            <li><a href="#ebook">EBOOK</a></li>
+                                            <li><a href="#fic">FICTION BOOKS</a></li>
+                                            <li><a href="#non">NON-FICTION BOOKS</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                 </div>
             </div>
         </div>
+        
+        <h1 style="text-align: center;" id="acad">ACADEMIC BOOKS</h1>
+
         <div class="box">
             <div class="row">
 
-            <div class="col-4 col-md-6 col-sm-12">
+            <div class="col-3 col-md-6 col-sm-12">
               <div class="product-card">
                   <div class="product-card-img">
-                      <img src="./images/nightingale.png " alt="">
-                      <img src="./images/nightingale.png " alt="">
+                      <img src="./images/acad 1.jpg " alt="">
+                      <img src="./images/acad 1.jpg " alt="">
                   </div>
                   <div class="product-card-info">
                       <div class="product-btn1">
-                          <a href="./product-details - The Nightingle - fichis.html" class="btn-flat btn-hover btn-shop-now">Details</a>
-<!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="FH1" data-name="The Nightingale" data-summary="summary 1" data-price="400.00" data-quantity="1" data-image="images/nightingale.png">
+                          <a href="./critique - book.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="FH1" data-name="The Critique of Pure Reason" data-summary="summary 1" data-price="750.00" data-quantity="1" data-image="images/acad 1.jpg">
                               <i class='bx bxs-cart-add'></i>
                           </button>
-
                       </div>
                       <div class="product-card-name">
-                      <br>The Nightingale
+                      <br>The Critique of Pure Reason
                       </div>
                       <div class="product-card-price">
-                          <span class="curr-price">₱ 400.00</span>
+                          <span class="curr-price">₱ 750.00</span>
                       </div>
                   </div>
 
@@ -190,160 +214,717 @@
               </div>
           </div>
 
-           <div class="col-4 col-md-6 col-sm-12">
-              <div class="product-card">
-                  <div class="product-card-img">
-                      <img src="images/tbonw.png " alt="">
-                      <img src="images/tbonw.png" alt="">
-                  </div>
-                  <div class="product-card-info">
-                      <div class="product-btn1">
-                          <a href="./product-details - The Book of Night Women - fichis.html" class="btn-flat btn-hover btn-shop-now">Details</a>
-<!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="FH2" data-name="The Book of Night Women" data-summary="summary 1" data-price="500.00" data-quantity="1" data-image="images/tbonw.png">
-                              <i class='bx bxs-cart-add'></i>
-                          </button>
+			 <div class="col-3 col-md-6 col-sm-12">
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="images/acad 2.jpg " alt="">
+                        <img src="images/acad 2.jpg" alt="">
+                    </div>
+                    <div class="product-card-info">
+                        <div class="product-btn1">
+                            <a href="./nineteen - book.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+  <!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="FH2" data-name="Nineteen Eighty-Four" data-summary="summary 1" data-price="499.00" data-quantity="1" data-image="images/acad 2.jpg">
+                                <i class='bx bxs-cart-add'></i>
+                            </button>
+  
+                        </div>
+                        <div class="product-card-name">
+                        <br>Nineteen Eighty-Four 
+                        </div>
+                        <div class="product-card-price">
+                            <span class="curr-price">₱ 499.00</span>
+                        </div>
+                    </div>
+  
+  
+                </div>
+            </div>
 
-                      </div>
-                      <div class="product-card-name">
-                      <br>The Book of Night Women
-                      </div>
-                      <div class="product-card-price">
-                          <span class="curr-price">₱ 500.00</span>
-                      </div>
-                  </div>
+			<div class="col-3 col-md-6 col-sm-12">
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="images/acad 3.png " alt="">
+                        <img src="images/acad 3.png" alt="">
+                    </div>
+                    <div class="product-card-info">
+                        <div class="product-btn1">
+                            <a href="./silent - book.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+  <!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="FH3" data-name="Silent Spring" data-summary="summary 1" data-price="550.00" data-quantity="1" data-image="images/acad 3.png">
+                                <i class='bx bxs-cart-add'></i>
+                            </button>
+  
+                        </div>
+                        <div class="product-card-name">
+                        <br>Silent Spring
+                        </div>
+                        <div class="product-card-price">
+                            <span class="curr-price">₱ 550.00</span>
+                        </div>
+                    </div>
+  
+  
+                </div>
+            </div>
 
+			<div class="col-3 col-md-6 col-sm-12">
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="images/acad 4.jpg " alt="">
+                        <img src="images/acad 4.jpg" alt="">
+                    </div>
+                    <div class="product-card-info">
+                        <div class="product-btn1">
+                            <a href="./abriefhistoryoftime - book.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+  <!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="FH4" data-name="A Brief History of Time" data-summary="summary 1" data-price="500.00" data-quantity="1" data-image="images/acad 4.jpg">
+                                <i class='bx bxs-cart-add'></i>
+                            </button>
+  
+                        </div>
+                        <div class="product-card-name">
+                        <br>A Brief History of Time
+                        </div>
+                        <div class="product-card-price">
+                            <span class="curr-price">₱ 500.00</span>
+                        </div>
+                    </div>
+  
+  
+                </div>
+            </div>
 
-              </div>
+			<div class="col-3 col-md-6 col-sm-12">
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="images/acad 5.jpg" alt="">
+                        <img src="images/acad 5.jpg" alt="">
+                    </div>
+                    <div class="product-card-info">
+                        <div class="product-btn1">
+                            <a href="./AVindicationoftheRightsofWoman - book.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+  <!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="FH5" data-name="A Vindication of the Rights of Woman" data-summary="summary 1" data-price="1508.00" data-quantity="1" data-image="images/acad 5.jpg">
+                                <i class='bx bxs-cart-add'></i>
+                            </button>
+  
+                        </div>
+                        <div class="product-card-name">
+                        <br>A Vindication of the Rights of Woman
+                        </div>
+                        <div class="product-card-price">
+                            <span class="curr-price">₱ 1,508</span>
+                        </div>
+                    </div>
+  
+  
+                </div>
+            </div>
+			
+            </div>
           </div>
 
-          <div class="col-4 col-md-6 col-sm-12">
-              <div class="product-card">
-                  <div class="product-card-img">
-                      <img src="images/tbon.png " alt="">
-                      <img src="images/tbon.png" alt="">
+          <h1 style="text-align: center;" id="child">CHILBDREN'S BOOKS</h1>
+
+          <div class="box">
+              <div class="row">
+  
+              <div class="col-3 col-md-6 col-sm-12">
+                  <div class="product-card">
+                      <div class="product-card-img">
+                          <img src="images/child 1.png" alt="">
+                          <img src="images/child 1.png" alt="">
+                      </div>
+                      <div class="product-card-info">
+                          <div class="product-btn1">
+                              <a href="./babies - book.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+  <!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="child1" data-name="Babies Around the World" data-summary="summary 1" data-price="350.00" data-quantity="1" data-image="images/child 1.png">
+                                  <i class='bx bxs-cart-add'></i>
+                              </button>
+  
+                          </div>
+                          <div class="product-card-name">
+                          <br>Babies Around the World
+                          </div>
+                          <div class="product-card-price">
+                              <span class="curr-price">₱ 350.00</span>
+                          </div>
+                      </div>
+  
+  
                   </div>
-                  <div class="product-card-info">
-                      <div class="product-btn1">
-                          <a href="./product-details - The Book of Negroes  - fichis.html" class="btn-flat btn-hover btn-shop-now">Details</a>
-<!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="FH3" data-name="The Book of Negroes" data-summary="summary 1" data-price="350.15" data-quantity="1" data-image="images/tbon.png">
-                              <i class='bx bxs-cart-add'></i>
-                          </button>
+            </div>
 
-                      </div>
-                      <div class="product-card-name">
-                      <br>The Book of Negroes
-                      </div>
-                      <div class="product-card-price">
-                          <span class="curr-price">₱ 350.15</span>
-                      </div>
-                  </div>
+           <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/child 2.png" alt="">
+                    <img src="images/child 2.png" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./dreambig - book.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="child2" data-name="Dream Big, Little One" data-summary="summary 1" data-price="400.00" data-quantity="1" data-image="images/child 2.png">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                    <div class="product-card-name">
+                    <br>Dream Big, Little One
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 400.00</span>
+                    </div>
+                </div>
 
 
-              </div>
+            </div>
+
           </div>
 
-          <div class="col-4 col-md-6 col-sm-12">
-              <div class="product-card">
-                  <div class="product-card-img">
-                      <img src="images/o&l.png " alt="">
-                      <img src="images/o&l.png" alt="">
-                  </div>
-                  <div class="product-card-info">
-                      <div class="product-btn1">
-                          <a href="./product-details - Oscar & Lucinda  - fichis.html" class="btn-flat btn-hover btn-shop-now">Details</a>
-<!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="FH4" data-name="Oscar & Lucinda" data-summary="summary 1" data-price="350.15" data-quantity="1" data-image="images/o&l.png">
-                              <i class='bx bxs-cart-add'></i>
-                          </button>
+          <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/child 3.png" alt="">
+                    <img src="images/child 3.png" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./goodnight - book.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="child3" data-name="Goodnight Moon" data-summary="summary 1" data-price="499.00" data-quantity="1" data-image="images/child 3.png">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
 
-                      </div>
-                      <div class="product-card-name">
-                      <br>Oscar & Lucinda
-                      </div>
-                      <div class="product-card-price">
-                          <span class="curr-price">₱ 350.15</span>
-                      </div>
-                  </div>
+                    </div>
+                    <div class="product-card-name">
+                    <br>Goodnight Moon
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 499.00</span>
+                    </div>
+                </div>
 
 
-              </div>
+            </div>
           </div>
 
-          <div class="col-4 col-md-6 col-sm-12">
-              <div class="product-card">
-                  <div class="product-card-img">
-                      <img src="images/beloved.png" alt="">
-                      <img src="images/beloved.png" alt="">
-                  </div>
-                  <div class="product-card-info">
-                      <div class="product-btn1">
-                          <a href="./product-details -Beloved - fichis.html" class="btn-flat btn-hover btn-shop-now">Details</a>
-<!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="FH5" data-name="Beloved" data-summary="summary 1" data-price="650.75" data-quantity="1" data-image="images/beloved.png">
-                              <i class='bx bxs-cart-add'></i>
-                          </button>
+          <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/child 4.png" alt="">
+                    <img src="images/child 4.png" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./snowfamily - book.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="child4" data-name=" Snow Family" data-summary="summary 1" data-price="399.00" data-quantity="1" data-image="images/child 4.png">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
 
-                      </div>
-                      <div class="product-card-name">
-                      <br>Beloved
-                      </div>
-                      <div class="product-card-price">
-                          <span class="curr-price">₱ 650.75</span>
-                      </div>
-                  </div>
+                    </div>
+                    <div class="product-card-name">
+                    <br> Snow Family
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 399.00</span>
+                    </div>
+                </div>
 
 
-              </div>
+
           </div>
-         </div>
+          </div>
 
+          <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/child 5.png" alt="">
+                    <img src="images/child 5.png" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./theveryhungry - book.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="child5" data-name=" The Very Hungry Caterpillar" data-summary="summary 1" data-price="600.00" data-quantity="1" data-image="images/child 5.png">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                    <div class="product-card-name">
+                    <br> The Very Hungry Caterpillar
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 600.00</span>
+                    </div>
+                </div>
+
+            </div>
+          </div>     
+
+          </div>
+        </div> 
+
+        <h1 style="text-align: center;" id="ebook">EBOOKS</h1>
+
+        <div class="box">
+            <div class="row">
+
+            <div class="col-3 col-md-6 col-sm-12">
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="images/ebook 1.png" alt="">
+                        <img src="images/ebook 1.png" alt="">
+                    </div>
+                    <div class="product-card-info">
+                        <div class="product-btn1">
+                            <a href="./AJournalofthePlague - book.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+    <!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="e1" data-name=" A Journal of the Plague Year" data-summary="summary 1" data-price="499.00" data-quantity="1" data-image="images/ebook 1.png">
+                                <i class='bx bxs-cart-add'></i>
+                            </button>
+    
+                        </div>
+                        <div class="product-card-name">
+                        <br> A Journal of the Plague Year
+                        </div>
+                        <div class="product-card-price">
+                            <span class="curr-price">₱ 499.00</span>
+                        </div>
+                    </div>
+
+                </div>
+          </div>
+
+           <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/ebook 2.png" alt="">
+                    <img src="images/ebook 2.png" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./ataleoftwocities - book.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="e2" data-name="A Tale of Two Cities" data-summary="summary 1" data-price="400.00" data-quantity="1" data-image="images/ebook 2.png">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                    <div class="product-card-name">
+                    <br> A Tale of Two Cities
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 400.00</span>
+                    </div>
+                </div>
+
+            </div>
+          </div>
+
+          <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/ebook 3.png" alt="">
+                    <img src="images/ebook 3.png" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./aliceinwonderland - book.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="e3" data-name="Alice’s Adventures in Wonderland" data-summary="summary 1" data-price="650.00" data-quantity="1" data-image="images/ebook 3.png">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                    <div class="product-card-name">
+                    <br> Alice’s Adventures in Wonderland
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 650.00</span>
+                    </div>
+                </div>
+
+            </div>
+          </div>
+
+          <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/ebook 4.png" alt="">
+                    <img src="images/ebook 4.png" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./PrideandPrejudice - book.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="e4" data-name=" Pride and Prejudice" data-summary="summary 1" data-price="799.00" data-quantity="1" data-image="images/ebook 4.png">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                    <div class="product-card-name">
+                    <br> Pride and Prejudice
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 799.00</span>
+                    </div>
+                </div>
+
+            </div>
+          </div>
+
+          <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/ebook 5.png" alt="">
+                    <img src="images/ebook 5.png" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./thecallofthewild - book.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="e5" data-name=" The Call of the Wild" data-summary="summary 1" data-price="600.00" data-quantity="1" data-image="images/ebook 5.png">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                    <div class="product-card-name">
+                    <br> The Call of the Wild 
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 600.00</span>
+                    </div>
+                </div>
+
+            </div>
+          </div>
+
+          </div>
         </div>
 
+        <h1 style="text-align: center;" id="fic">FICTION BOOKS</h1>
+
+        <div class="box">
+            <div class="row">
+
+            <div class="col-3 col-md-6 col-sm-12">
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="images/fic 1.png" alt="">
+                        <img src="images/fic 1.png" alt="">
+                    </div>
+                    <div class="product-card-info">
+                        <div class="product-btn1">
+                            <a href="./booklover - book.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+    <!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="fic1" data-name="Book Lovers" data-summary="summary 1" data-price="800.00" data-quantity="1" data-image="images/fic 1.png">
+                                <i class='bx bxs-cart-add'></i>
+                            </button>
+    
+                        </div>
+                        <div class="product-card-name">
+                        <br> Book Lovers
+                        </div>
+                        <div class="product-card-price">
+                            <span class="curr-price">₱ 800.00</span>
+                        </div>
+                    </div>
+
+                </div>
+          </div>
+
+           <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/fic 2.png" alt="">
+                    <img src="images/fic 2.png" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./olgadies - book.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="fic2" data-name=" Olga Dies Dreaming" data-summary="summary 1" data-price="650.00" data-quantity="1" data-image="images/fic 2.png">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                    <div class="product-card-name">
+                    <br> Olga Dies Dreaming
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 650.00</span>
+                    </div>
+                </div>
+
+            </div>
+          </div>
+
+          <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/fic 3.png" alt="">
+                    <img src="images/fic 3.png" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./themaid - book.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="fic3" data-name="The Maid" data-summary="summary 1" data-price="800.00" data-quantity="1" data-image="images/fic 3.png">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                    <div class="product-card-name">
+                    <br>  The Maid
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 800.00</span>
+                    </div>
+                </div>
+
+            </div>
+          </div>
+
+          <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/fic 4.png" alt="">
+                    <img src="images/fic 4.png" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./toparadise - book.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="fic4" data-name="To Paradise" data-summary="summary 1" data-price="800.00" data-quantity="1" data-image="images/fic 4.png">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                    <div class="product-card-name">
+                    <br> To Paradise
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 800.00</span>
+                    </div>
+                </div>
+
+            </div>
+          </div>
+
+          <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/fic 5.png" alt="">
+                    <img src="images/fic 5.png" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./violeta - book.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="fic5" data-name="Violeta" data-summary="summary 1" data-price="850.00" data-quantity="1" data-image="images/fic 5.png">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                    <div class="product-card-name">
+                    <br> Violeta  
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 850.00</span>
+                    </div>
+                </div>
+
+            </div>
+          </div>
+
+        </div>
+    </div>
+
+          <h3 style="text-align: center;" id="non">NON FICTION BOOKS</h3>
+
+          <div class="box">
+            <div class="row" >
+
+
+            <div class="col-3 col-md-6 col-sm-12">
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="images/nonfic 1.jpg" alt="">
+                        <img src="images/nonfic 1.jpg" alt="">
+                    </div>
+                    <div class="product-card-info">
+                        <div class="product-btn1">
+                            <a href="./birthdayletter - book.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="non1" data-name="Birthday Letters" data-summary="summary 1" data-price="400.00" data-quantity="1" data-image="images/nonfic 1.jpg">
+                                <i class='bx bxs-cart-add'></i>
+                            </button>
+
+                        </div>
+                        <div class="product-card-name">
+                        <br>Birthday Letters
+                        </div>
+                        <div class="product-card-price">
+                            <span class="curr-price">₱ 400.00 </span>
+                        </div>
+                    </div>
+
+
+                </div>
+          </div>
+
+           <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/nonfic 2.jpg" alt="">
+                    <img src="images/nonfic 2.jpg" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./dreamfrommyfather - book.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="non2" data-name=" Dreams from My Father" data-summary="summary 1" data-price="699.00" data-quantity="1" data-image="images/nonfic 2.jpg">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                    <div class="product-card-name">
+                    <br> Dreams from My Father
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 699.00 </span>
+                    </div>
+                </div>
+
+
+            </div>
+          </div>
+
+          <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/nonfic 3.png" alt="">
+                    <img src="images/nonfic 3.png" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./nologo - book.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="non3" data-name="No Logo" data-summary="summary 1" data-price="599.00" data-quantity="1" data-image="images/nonfic 3.png">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                    <div class="product-card-name">
+                    <br>No Logo
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 599.00</span>
+                    </div>
+                </div>
+
+
+            </div>
+          </div>
+
+          <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/nonfic 4.png" alt="">
+                    <img src="images/nonfic 4.png" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./sixth - book.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="non4" data-name="The Sixth Extinction" data-summary="summary 1" data-price="750.00" data-quantity="1" data-image="images/nonfic 4.png">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                    <div class="product-card-name">
+                    <br>The Sixth Extinction
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 750.00</span>
+                    </div>
+                </div>
+
+
+            </div>
+          </div>
+
+          <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="images/nonfic 5.png" alt="">
+                    <img src="images/nonfic 5.png" alt="">
+                </div>
+                <div class="product-card-info">
+                    <div class="product-btn1">
+                        <a href="./theyear - book.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="non5" data-name="The Year of Magical Thinking " data-summary="summary 1" data-price="550.00" data-quantity="1" data-image="images/nonfic 5.png">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+
+                    </div>
+                    <div class="product-card-name">
+                    <br> The Year of Magical Thinking 
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">₱ 550.00 </span>
+                    </div>
+                </div>
+
+
+            </div>
+          </div>
+ 
+
+            </div>
+        </div>
+
+
+
+          
       </div>
     <!-- end products content -->
 
     <!-- footer -->
-    <footer class="bg-second">
-      <div class="container">
-          <div class="row">
-              <div class="col-4">
-                  <h3 class="footer-head">Additional Information</h3>
+    <div class="footer">
 
-                  <p style="text-align: justify;">The Moon Pages is one of the top publishing company in the Philippines.  It produces high quality books that every book lover deserves.  </p>
-                      <br>
-                  <p style="text-align: justify;">In addition, the firm strives to offer a welcoming environment for its customers that encourages browsing, relaxation, and an enjoyable environment.</p>
-              </div>
-              <div class="col-4 ">
-                  <h3 class="footer-head" style="text-align: center;">Connect</h3>
-                  <ul class="menu" style="text-align: center;">
-                      <a href="#" class="fa fa-facebook"></a>
-                      <a href="#" class="fa fa-twitter"></a>
-                      <a href="#" class="fa fa-instagram"></a>
-                      <a href="#" class="fa fa-google"></a>
-                  </ul>
-              </div>
-              <div class="col-4 ">
-                  <h3 class="footer-head" style="text-align: center;">Address</h3>
-                  <ul class="menu">
-                      <p style="text-align: center;">Robinsons Pioneer Complex Pioneer St.</br>
-                          Mandaluyong City 1550 Philippines</p>
-                          <br>
-                          <h3 style="text-align: center;">CONTACT</h3><br>
-                       <p style="text-align: center;">TCPinquire@gmail.com
-
-                       <br/>0998-527-6381
-
-                       <br/>863-30114</p>
-                  </ul>
-              </div>
-
-          </div>
-      </div>
-      <div class="footer-copyright text-center" style="text-align: center;">© 2021 The City Pages
-          <br/>ALL RIGHTS RESERVED.</div>
-  </footer>
+        <div class="box-container">
+    
+            <div class="box">
+                <h3>additional info</h3>
+                <p>Searching for a diverse selection of arts and crafts? The Attic Library encourages you to learn while
+                    boosting your artistic and creative abilities. Find the latest up-to-date art supplies and DIY crafts.</p>
+            </div>
+    
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#">home</a>
+                <a href="#">about</a>
+                <a href="#">review</a>
+                <a href="#">contact</a>
+            </div>
+    
+            <div class="box">
+                <h3>follow us</h3>
+                    <a href="#">facebook</a>
+                    <a href="#">instagram</a>
+                    <a href="#">pinterest</a>
+                    <a href="#">twitter</a>
+            </div>
+    
+            <div class="box">
+                <h3>contact info</h3>
+                <div class="info">
+                    <i class="fas fa-phone"></i>
+                    <p> 0998-527-6381 <br> 863-30114 </p>
+                </div>
+                <div class="info">
+                    <i class="fas fa-envelope"></i>
+                    <p> TCPinquire@gmail.com <br> brightinc@gmail.com </p>
+                </div>
+                <div class="info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p> Robinsons Pioneer
+                        <br> Mandaluyong City, Philippines </p>
+                </div>
+            </div>
+    
+        </div>
+    
+        <h1 class="credit"> &copy; copyright @ 2020 by Bright Ideas Inc. </h1>
+    
+    </div>
     <!-- end footer -->
 
     <!-- app js -->
-    <script src="app.js"></script>
+    <script src="./js/app.js"></script>
 
     <!-- ADDTOCART JS -->
     <script src="js/jquery-2.2.3.min.js"></script>
@@ -404,5 +985,4 @@
     <!-- ADDTOCART JS END -->
 
 </body>
-
 </html>
