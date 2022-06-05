@@ -1,4 +1,32 @@
+<?php
+$host =  "localhost";
+$user =  "root";
+$password = "";
+$db = "theatticlibrary";
 
+$mysql = new mysqli("username", "email", "password");
+// mysqli_connect($username, $email, $password);
+mysql_select_db($db);
+
+if(isset($_POST['username'])) {
+    $uname=$_POST['username'];
+    $email=$_POST['email'];
+    $password=$_POST['password'];
+
+    $sql="select * from login where user = '".$uname."'AND PASS'".$password."' limit 1";
+
+    $result=mysql_query($sql);
+
+    if(mysql_num_rows($result)==1) {
+        echo "You have successfully logged in";
+        exit();
+    }
+    else {
+        echo "You have entered incorrect password";
+        exit();
+    }
+}
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -21,11 +49,11 @@
             <h2 class="title">Sign in</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" />
+              <input type="text" name="username" placeholder="Username" />
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" />
+              <input type="password" name="password" placeholder="Password" />
             </div>
             <input type="submit" value="Login" class="btn solid" />
             <p class="social-text">Or Sign in with social platforms</p>
@@ -44,19 +72,19 @@
               </a>
             </div>
           </form>
-          <form action="#" class="sign-up-form">
+          <form action="#" method="POST" class="sign-up-form">
             <h2 class="title">Sign up</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" />
+              <input type="text" name="username" placeholder="Username" />
             </div>
             <div class="input-field">
               <i class="fas fa-envelope"></i>
-              <input type="email" placeholder="Email" />
+              <input type="email" name="email" placeholder="Email" />
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" />
+              <input type="password" name="password" placeholder="Password" />
             </div>
             <input type="submit" class="btn" value="Sign up" />
             <p class="social-text">Or Sign up with social platforms</p>
