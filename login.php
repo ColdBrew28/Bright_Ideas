@@ -173,6 +173,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <button class="btn transparent" id="sign-in-btn">
               Sign in
             </button>
+            <p>or</p>
+            <button class="btn transparent" id="sign-in-btn">
+              <a href="admin.html">
+              Sign in as Admin
+              </a>
+            </button>
           </div>
           <img src="images/register.svg" class="image" alt="" />
         </div>
