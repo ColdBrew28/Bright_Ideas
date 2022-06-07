@@ -78,8 +78,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <input type="password" placeholder="Password" name="Password" required>
             </div>
             
-            <input type="submit" name="submit" value="Login" class="btn solid" />
-            <div class="link"> <a href="index.html"></a></div>
+            <input type="submit" name="submit" value="Login" class="btn solid"/>
+            <div class="link"> <a href="indexlogin.html"></a></div>
             <p class="social-text">Or Sign in with social platforms</p>
             <div class="social-media">
               <a href="#" class="social-icon">
