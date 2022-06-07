@@ -102,15 +102,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <h2 class="title">Sign up</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" name="Username" value="<?php echo $Username; ?>" >
+              <input type="text" placeholder="Username" required input-field name="Username" value="<?php echo $Username; ?>" >
             </div>
             <div class="input-field">
               <i class="fas fa-envelope"></i>
-              <input type="text" placeholder="Enter your Email_Address" name="Email_Address" value="<?php echo $Email_Address; ?>" >
+              <input type="text" placeholder="Enter your Email_Address" required input-field name="Email_Address" value="<?php echo $Email_Address; ?>" >
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Enter Password" name="Password" value="<?php echo $Password; ?>" >
+              <input type="password" placeholder="Enter Password" required input-field name="Password" value="<?php echo $Password; ?>" >
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" required>
+              <label for="termsandcond" class="form-check-label">I agree with the terms & conditions.</label>
             </div>
             
             <?php
