@@ -32,7 +32,7 @@ if (isset($_POST['submit'])) {
     
           if($Username == $Username and $Password == $Password) {
             echo "<script>
-                            window.location='/bright_ideas/index.html';
+                            window.location='/bright_ideas/indexlogin.html';
                         </script>";
           } elseif($Username == $Username and $Password != $Password) {
             echo "<script>
